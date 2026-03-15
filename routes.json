@@ -1,0 +1,1033 @@
+{
+  "version": 1,
+  "updated_at": "2026-03-15",
+  "routes": [
+    {
+      "id": "nj-paris-berlin",
+      "name": "Paris → Berlin",
+      "operator": "Nightjet / SNCF",
+      "status": "active",
+      "operating_days": "Quotidien",
+      "duration": "13h15",
+      "bike_allowed": true,
+      "pet_allowed": false,
+      "meal_included": true,
+      "shower_available": true,
+      "booking_url": "https://www.nightjet.com",
+      "coordinates": [
+        {
+          "lat": 48.8566,
+          "lon": 2.3522
+        },
+        {
+          "lat": 48.5734,
+          "lon": 7.7521
+        },
+        {
+          "lat": 48.7758,
+          "lon": 9.177
+        },
+        {
+          "lat": 48.1351,
+          "lon": 11.582
+        },
+        {
+          "lat": 52.52,
+          "lon": 13.405
+        }
+      ],
+      "stops": [
+        {
+          "city": "Paris Est",
+          "arrival": null,
+          "departure": "19:42"
+        },
+        {
+          "city": "Strasbourg",
+          "arrival": "23:00",
+          "departure": "23:10"
+        },
+        {
+          "city": "Stuttgart",
+          "arrival": "00:44",
+          "departure": "00:50"
+        },
+        {
+          "city": "Munich",
+          "arrival": "02:40",
+          "departure": "02:55"
+        },
+        {
+          "city": "Berlin Hbf",
+          "arrival": "08:57",
+          "departure": null
+        }
+      ],
+      "accommodations": [
+        {
+          "type": "seat",
+          "startingPrice": 29
+        },
+        {
+          "type": "couchette",
+          "startingPrice": 59
+        },
+        {
+          "type": "sleeper",
+          "startingPrice": 109
+        }
+      ],
+      "is_direct": true
+    },
+    {
+      "id": "nj-paris-vienna",
+      "name": "Paris → Vienne",
+      "operator": "Nightjet / SNCF",
+      "status": "active",
+      "operating_days": "Quotidien",
+      "duration": "11h56",
+      "bike_allowed": true,
+      "pet_allowed": false,
+      "meal_included": true,
+      "shower_available": true,
+      "booking_url": "https://www.nightjet.com",
+      "coordinates": [
+        {
+          "lat": 48.8566,
+          "lon": 2.3522
+        },
+        {
+          "lat": 48.5734,
+          "lon": 7.7521
+        },
+        {
+          "lat": 48.1351,
+          "lon": 11.582
+        },
+        {
+          "lat": 47.8095,
+          "lon": 13.055
+        },
+        {
+          "lat": 48.2082,
+          "lon": 16.3738
+        }
+      ],
+      "stops": [
+        {
+          "city": "Paris Est",
+          "arrival": null,
+          "departure": "19:42"
+        },
+        {
+          "city": "Strasbourg",
+          "arrival": "23:00",
+          "departure": "23:10"
+        },
+        {
+          "city": "Munich",
+          "arrival": "02:40",
+          "departure": "02:55"
+        },
+        {
+          "city": "Salzburg",
+          "arrival": "04:12",
+          "departure": "04:18"
+        },
+        {
+          "city": "Vienne Hbf",
+          "arrival": "07:38",
+          "departure": null
+        }
+      ],
+      "accommodations": [
+        {
+          "type": "seat",
+          "startingPrice": 29
+        },
+        {
+          "type": "couchette",
+          "startingPrice": 59
+        },
+        {
+          "type": "sleeper",
+          "startingPrice": 109
+        },
+        {
+          "type": "suite",
+          "startingPrice": 199
+        }
+      ],
+      "is_direct": true
+    },
+    {
+      "id": "sncf-paris-barcelona",
+      "name": "Paris → Barcelone",
+      "operator": "SNCF / Renfe",
+      "status": "active",
+      "operating_days": "Lun, Mer, Ven, Sam",
+      "duration": "9h00",
+      "bike_allowed": false,
+      "pet_allowed": true,
+      "meal_included": false,
+      "shower_available": false,
+      "booking_url": "https://www.sncf-connect.com",
+      "coordinates": [
+        {
+          "lat": 48.8566,
+          "lon": 2.3522
+        },
+        {
+          "lat": 45.764,
+          "lon": 4.8357
+        },
+        {
+          "lat": 42.6887,
+          "lon": 2.8948
+        },
+        {
+          "lat": 41.3851,
+          "lon": 2.1734
+        }
+      ],
+      "stops": [
+        {
+          "city": "Paris Austerlitz",
+          "arrival": null,
+          "departure": "21:25"
+        },
+        {
+          "city": "Lyon Part-Dieu",
+          "arrival": "23:37",
+          "departure": "23:45"
+        },
+        {
+          "city": "Perpignan",
+          "arrival": "03:58",
+          "departure": "04:05"
+        },
+        {
+          "city": "Barcelone Sants",
+          "arrival": "06:25",
+          "departure": null
+        }
+      ],
+      "accommodations": [
+        {
+          "type": "seat",
+          "startingPrice": 25
+        },
+        {
+          "type": "couchette",
+          "startingPrice": 55
+        },
+        {
+          "type": "sleeper",
+          "startingPrice": 99
+        }
+      ],
+      "is_direct": true
+    },
+    {
+      "id": "nj-amsterdam-vienna",
+      "name": "Amsterdam → Vienne",
+      "operator": "Nightjet",
+      "status": "active",
+      "operating_days": "Quotidien",
+      "duration": "13h18",
+      "bike_allowed": true,
+      "pet_allowed": false,
+      "meal_included": true,
+      "shower_available": true,
+      "booking_url": "https://www.nightjet.com",
+      "coordinates": [
+        {
+          "lat": 52.3676,
+          "lon": 4.9041
+        },
+        {
+          "lat": 50.1109,
+          "lon": 8.6821
+        },
+        {
+          "lat": 48.1351,
+          "lon": 11.582
+        },
+        {
+          "lat": 47.8095,
+          "lon": 13.055
+        },
+        {
+          "lat": 48.2082,
+          "lon": 16.3738
+        }
+      ],
+      "stops": [
+        {
+          "city": "Amsterdam Centraal",
+          "arrival": null,
+          "departure": "18:20"
+        },
+        {
+          "city": "Frankfurt Hbf",
+          "arrival": "22:49",
+          "departure": "23:02"
+        },
+        {
+          "city": "Munich Hbf",
+          "arrival": "02:40",
+          "departure": "02:55"
+        },
+        {
+          "city": "Salzburg",
+          "arrival": "04:12",
+          "departure": "04:18"
+        },
+        {
+          "city": "Vienne Hbf",
+          "arrival": "07:38",
+          "departure": null
+        }
+      ],
+      "accommodations": [
+        {
+          "type": "seat",
+          "startingPrice": 29
+        },
+        {
+          "type": "couchette",
+          "startingPrice": 59
+        },
+        {
+          "type": "sleeper",
+          "startingPrice": 109
+        },
+        {
+          "type": "suite",
+          "startingPrice": 199
+        }
+      ],
+      "is_direct": true
+    },
+    {
+      "id": "nj-zurich-rome",
+      "name": "Zurich → Rome",
+      "operator": "Nightjet / Trenitalia",
+      "status": "active",
+      "operating_days": "Quotidien",
+      "duration": "9h20",
+      "bike_allowed": false,
+      "pet_allowed": false,
+      "meal_included": true,
+      "shower_available": true,
+      "booking_url": "https://www.nightjet.com",
+      "coordinates": [
+        {
+          "lat": 47.3769,
+          "lon": 8.5417
+        },
+        {
+          "lat": 45.4654,
+          "lon": 9.19
+        },
+        {
+          "lat": 43.7696,
+          "lon": 11.2558
+        },
+        {
+          "lat": 41.9028,
+          "lon": 12.4964
+        }
+      ],
+      "stops": [
+        {
+          "city": "Zurich Hbf",
+          "arrival": null,
+          "departure": "21:05"
+        },
+        {
+          "city": "Milan Centrale",
+          "arrival": "23:45",
+          "departure": "00:10"
+        },
+        {
+          "city": "Florence SMN",
+          "arrival": "02:48",
+          "departure": "02:55"
+        },
+        {
+          "city": "Rome Termini",
+          "arrival": "06:25",
+          "departure": null
+        }
+      ],
+      "accommodations": [
+        {
+          "type": "couchette",
+          "startingPrice": 49
+        },
+        {
+          "type": "sleeper",
+          "startingPrice": 99
+        },
+        {
+          "type": "suite",
+          "startingPrice": 189
+        }
+      ],
+      "is_direct": true
+    },
+    {
+      "id": "cal-london-edinburgh",
+      "name": "Londres → Édimbourg",
+      "operator": "Caledonian Sleeper",
+      "status": "active",
+      "operating_days": "Lun – Sam",
+      "duration": "5h45",
+      "bike_allowed": true,
+      "pet_allowed": true,
+      "meal_included": false,
+      "shower_available": true,
+      "booking_url": "https://www.sleeper.scot",
+      "coordinates": [
+        {
+          "lat": 51.5074,
+          "lon": -0.1278
+        },
+        {
+          "lat": 52.9548,
+          "lon": -1.1581
+        },
+        {
+          "lat": 54.9783,
+          "lon": -1.6178
+        },
+        {
+          "lat": 55.9533,
+          "lon": -3.1883
+        }
+      ],
+      "stops": [
+        {
+          "city": "London Euston",
+          "arrival": null,
+          "departure": "23:45"
+        },
+        {
+          "city": "Nottingham",
+          "arrival": "01:10",
+          "departure": "01:15"
+        },
+        {
+          "city": "Newcastle",
+          "arrival": "03:28",
+          "departure": "03:33"
+        },
+        {
+          "city": "Edinburgh Waverley",
+          "arrival": "05:30",
+          "departure": null
+        }
+      ],
+      "accommodations": [
+        {
+          "type": "seat",
+          "startingPrice": 19
+        },
+        {
+          "type": "couchette",
+          "startingPrice": 45
+        },
+        {
+          "type": "sleeper",
+          "startingPrice": 85
+        }
+      ],
+      "is_direct": true
+    },
+    {
+      "id": "nj-berlin-vienna",
+      "name": "Berlin → Vienne",
+      "operator": "Nightjet",
+      "status": "active",
+      "operating_days": "Quotidien",
+      "duration": "8h35",
+      "bike_allowed": true,
+      "pet_allowed": false,
+      "meal_included": true,
+      "shower_available": false,
+      "booking_url": "https://www.nightjet.com",
+      "coordinates": [
+        {
+          "lat": 52.52,
+          "lon": 13.405
+        },
+        {
+          "lat": 50.0755,
+          "lon": 14.4378
+        },
+        {
+          "lat": 48.2082,
+          "lon": 16.3738
+        }
+      ],
+      "stops": [
+        {
+          "city": "Berlin Hbf",
+          "arrival": null,
+          "departure": "21:40"
+        },
+        {
+          "city": "Prague",
+          "arrival": "01:22",
+          "departure": "01:38"
+        },
+        {
+          "city": "Vienne Hbf",
+          "arrival": "06:15",
+          "departure": null
+        }
+      ],
+      "accommodations": [
+        {
+          "type": "seat",
+          "startingPrice": 29
+        },
+        {
+          "type": "couchette",
+          "startingPrice": 55
+        },
+        {
+          "type": "sleeper",
+          "startingPrice": 99
+        }
+      ],
+      "is_direct": true
+    },
+    {
+      "id": "nj-vienna-hamburg",
+      "name": "Vienne → Hamburg",
+      "operator": "Nightjet",
+      "status": "active",
+      "operating_days": "Quotidien",
+      "duration": "11h30",
+      "bike_allowed": true,
+      "pet_allowed": false,
+      "meal_included": true,
+      "shower_available": true,
+      "booking_url": "https://www.nightjet.com",
+      "coordinates": [
+        {
+          "lat": 48.2082,
+          "lon": 16.3738
+        },
+        {
+          "lat": 48.1351,
+          "lon": 11.582
+        },
+        {
+          "lat": 50.1109,
+          "lon": 8.6821
+        },
+        {
+          "lat": 53.5753,
+          "lon": 10.0153
+        }
+      ],
+      "stops": [
+        {
+          "city": "Vienne Hbf",
+          "arrival": null,
+          "departure": "20:27"
+        },
+        {
+          "city": "Munich Hbf",
+          "arrival": "23:35",
+          "departure": "23:50"
+        },
+        {
+          "city": "Frankfurt",
+          "arrival": "02:15",
+          "departure": "02:25"
+        },
+        {
+          "city": "Hamburg Hbf",
+          "arrival": "07:57",
+          "departure": null
+        }
+      ],
+      "accommodations": [
+        {
+          "type": "seat",
+          "startingPrice": 29
+        },
+        {
+          "type": "couchette",
+          "startingPrice": 59
+        },
+        {
+          "type": "sleeper",
+          "startingPrice": 119
+        },
+        {
+          "type": "suite",
+          "startingPrice": 199
+        }
+      ],
+      "is_direct": true
+    },
+    {
+      "id": "nj-zurich-vienna",
+      "name": "Zurich → Vienne",
+      "operator": "Nightjet",
+      "status": "active",
+      "operating_days": "Quotidien",
+      "duration": "9h00",
+      "bike_allowed": true,
+      "pet_allowed": false,
+      "meal_included": true,
+      "shower_available": false,
+      "booking_url": "https://www.nightjet.com",
+      "coordinates": [
+        {
+          "lat": 47.3769,
+          "lon": 8.5417
+        },
+        {
+          "lat": 47.8095,
+          "lon": 13.055
+        },
+        {
+          "lat": 48.2082,
+          "lon": 16.3738
+        }
+      ],
+      "stops": [
+        {
+          "city": "Zurich Hbf",
+          "arrival": null,
+          "departure": "21:30"
+        },
+        {
+          "city": "Salzburg",
+          "arrival": "00:58",
+          "departure": "01:05"
+        },
+        {
+          "city": "Vienne Hbf",
+          "arrival": "06:30",
+          "departure": null
+        }
+      ],
+      "accommodations": [
+        {
+          "type": "couchette",
+          "startingPrice": 49
+        },
+        {
+          "type": "sleeper",
+          "startingPrice": 99
+        }
+      ],
+      "is_direct": true
+    },
+    {
+      "id": "sncf-paris-toulouse",
+      "name": "Paris → Toulouse",
+      "operator": "SNCF Intercités de Nuit",
+      "status": "active",
+      "operating_days": "Quotidien",
+      "duration": "6h45",
+      "bike_allowed": false,
+      "pet_allowed": true,
+      "meal_included": false,
+      "shower_available": false,
+      "booking_url": "https://www.sncf-connect.com",
+      "coordinates": [
+        {
+          "lat": 48.8566,
+          "lon": 2.3522
+        },
+        {
+          "lat": 44.8378,
+          "lon": 0.5792
+        },
+        {
+          "lat": 43.6047,
+          "lon": 1.4442
+        }
+      ],
+      "stops": [
+        {
+          "city": "Paris Austerlitz",
+          "arrival": null,
+          "departure": "22:02"
+        },
+        {
+          "city": "Bordeaux",
+          "arrival": "01:40",
+          "departure": "01:50"
+        },
+        {
+          "city": "Toulouse Matabiau",
+          "arrival": "04:47",
+          "departure": null
+        }
+      ],
+      "accommodations": [
+        {
+          "type": "seat",
+          "startingPrice": 15
+        },
+        {
+          "type": "couchette",
+          "startingPrice": 35
+        }
+      ],
+      "is_direct": true
+    },
+    {
+      "id": "sncf-paris-briancon",
+      "name": "Paris → Briançon",
+      "operator": "SNCF Intercités de Nuit",
+      "status": "active",
+      "operating_days": "Ven, Sam",
+      "duration": "8h10",
+      "bike_allowed": false,
+      "pet_allowed": true,
+      "meal_included": false,
+      "shower_available": false,
+      "booking_url": "https://www.sncf-connect.com",
+      "coordinates": [
+        {
+          "lat": 48.8566,
+          "lon": 2.3522
+        },
+        {
+          "lat": 45.1885,
+          "lon": 5.7245
+        },
+        {
+          "lat": 44.8965,
+          "lon": 6.6364
+        }
+      ],
+      "stops": [
+        {
+          "city": "Paris Austerlitz",
+          "arrival": null,
+          "departure": "21:03"
+        },
+        {
+          "city": "Grenoble",
+          "arrival": "02:15",
+          "departure": "02:25"
+        },
+        {
+          "city": "Briançon",
+          "arrival": "05:13",
+          "departure": null
+        }
+      ],
+      "accommodations": [
+        {
+          "type": "seat",
+          "startingPrice": 15
+        },
+        {
+          "type": "couchette",
+          "startingPrice": 35
+        }
+      ],
+      "is_direct": true
+    },
+    {
+      "id": "sj-stockholm-hamburg",
+      "name": "Stockholm → Hamburg",
+      "operator": "Snälltåget",
+      "status": "active",
+      "operating_days": "Ven (saison estivale)",
+      "duration": "14h00",
+      "bike_allowed": true,
+      "pet_allowed": false,
+      "meal_included": false,
+      "shower_available": false,
+      "booking_url": "https://www.snalltaget.se",
+      "coordinates": [
+        {
+          "lat": 59.3293,
+          "lon": 18.0686
+        },
+        {
+          "lat": 57.7089,
+          "lon": 11.9746
+        },
+        {
+          "lat": 53.5753,
+          "lon": 10.0153
+        }
+      ],
+      "stops": [
+        {
+          "city": "Stockholm",
+          "arrival": null,
+          "departure": "17:00"
+        },
+        {
+          "city": "Gothenburg",
+          "arrival": "20:05",
+          "departure": "20:15"
+        },
+        {
+          "city": "Hamburg Hbf",
+          "arrival": "07:00",
+          "departure": null
+        }
+      ],
+      "accommodations": [
+        {
+          "type": "seat",
+          "startingPrice": 39
+        },
+        {
+          "type": "couchette",
+          "startingPrice": 79
+        },
+        {
+          "type": "sleeper",
+          "startingPrice": 139
+        }
+      ],
+      "is_direct": true
+    },
+    {
+      "id": "sncf-paris-nice",
+      "name": "Paris → Nice",
+      "operator": "SNCF Intercités de Nuit",
+      "status": "suspended",
+      "operating_days": "Suspendu depuis 2017",
+      "duration": "9h04",
+      "bike_allowed": false,
+      "pet_allowed": false,
+      "meal_included": false,
+      "shower_available": false,
+      "booking_url": "https://www.sncf-connect.com",
+      "coordinates": [
+        {
+          "lat": 48.8566,
+          "lon": 2.3522
+        },
+        {
+          "lat": 45.764,
+          "lon": 4.8357
+        },
+        {
+          "lat": 43.7102,
+          "lon": 7.262
+        }
+      ],
+      "stops": [
+        {
+          "city": "Paris Austerlitz",
+          "arrival": null,
+          "departure": "21:03"
+        },
+        {
+          "city": "Lyon Part-Dieu",
+          "arrival": "23:20",
+          "departure": "23:28"
+        },
+        {
+          "city": "Nice Ville",
+          "arrival": "06:07",
+          "departure": null
+        }
+      ],
+      "accommodations": [
+        {
+          "type": "seat",
+          "startingPrice": 20
+        },
+        {
+          "type": "couchette",
+          "startingPrice": 40
+        }
+      ],
+      "is_direct": true
+    },
+    {
+      "id": "rzd-paris-moscow",
+      "name": "Paris → Moscou",
+      "operator": "RZD / SNCF",
+      "status": "suspended",
+      "operating_days": "Suspendu depuis 2022",
+      "duration": "29h53",
+      "bike_allowed": false,
+      "pet_allowed": false,
+      "meal_included": true,
+      "shower_available": true,
+      "booking_url": "https://www.rzd.ru",
+      "coordinates": [
+        {
+          "lat": 48.8566,
+          "lon": 2.3522
+        },
+        {
+          "lat": 52.2297,
+          "lon": 21.0122
+        },
+        {
+          "lat": 55.7558,
+          "lon": 37.6173
+        }
+      ],
+      "stops": [
+        {
+          "city": "Paris Nord",
+          "arrival": null,
+          "departure": "14:00"
+        },
+        {
+          "city": "Varsovie",
+          "arrival": "06:30",
+          "departure": "07:10"
+        },
+        {
+          "city": "Moscou",
+          "arrival": "19:53",
+          "departure": null
+        }
+      ],
+      "accommodations": [
+        {
+          "type": "couchette",
+          "startingPrice": 150
+        },
+        {
+          "type": "sleeper",
+          "startingPrice": 280
+        }
+      ],
+      "is_direct": false
+    },
+    {
+      "id": "nj-paris-brussels-amsterdam",
+      "name": "Paris → Bruxelles → Amsterdam",
+      "operator": "Nightjet / SNCB",
+      "status": "upcoming",
+      "operating_days": "Prévu 2026",
+      "duration": "4h15",
+      "bike_allowed": true,
+      "pet_allowed": false,
+      "meal_included": false,
+      "shower_available": false,
+      "booking_url": "https://www.nightjet.com",
+      "coordinates": [
+        {
+          "lat": 48.8566,
+          "lon": 2.3522
+        },
+        {
+          "lat": 50.8503,
+          "lon": 4.3517
+        },
+        {
+          "lat": 52.3676,
+          "lon": 4.9041
+        }
+      ],
+      "stops": [
+        {
+          "city": "Paris Nord",
+          "arrival": null,
+          "departure": "23:00"
+        },
+        {
+          "city": "Bruxelles Midi",
+          "arrival": "01:10",
+          "departure": "01:20"
+        },
+        {
+          "city": "Amsterdam Centraal",
+          "arrival": "03:15",
+          "departure": null
+        }
+      ],
+      "accommodations": [
+        {
+          "type": "seat",
+          "startingPrice": 25
+        },
+        {
+          "type": "couchette",
+          "startingPrice": 55
+        }
+      ],
+      "is_direct": true
+    },
+    {
+      "id": "nj-vienna-brussels",
+      "name": "Vienne → Bruxelles",
+      "operator": "Nightjet",
+      "status": "upcoming",
+      "operating_days": "Prévu 2026",
+      "duration": "10h11",
+      "bike_allowed": true,
+      "pet_allowed": false,
+      "meal_included": true,
+      "shower_available": true,
+      "booking_url": "https://www.nightjet.com",
+      "coordinates": [
+        {
+          "lat": 48.2082,
+          "lon": 16.3738
+        },
+        {
+          "lat": 48.1351,
+          "lon": 11.582
+        },
+        {
+          "lat": 50.9333,
+          "lon": 6.9583
+        },
+        {
+          "lat": 50.8503,
+          "lon": 4.3517
+        }
+      ],
+      "stops": [
+        {
+          "city": "Vienne Hbf",
+          "arrival": null,
+          "departure": "20:27"
+        },
+        {
+          "city": "Munich Hbf",
+          "arrival": "23:35",
+          "departure": "23:50"
+        },
+        {
+          "city": "Cologne Hbf",
+          "arrival": "04:12",
+          "departure": "04:20"
+        },
+        {
+          "city": "Bruxelles Midi",
+          "arrival": "06:38",
+          "departure": null
+        }
+      ],
+      "accommodations": [
+        {
+          "type": "couchette",
+          "startingPrice": 59
+        },
+        {
+          "type": "sleeper",
+          "startingPrice": 119
+        }
+      ],
+      "is_direct": true
+    }
+  ]
+}

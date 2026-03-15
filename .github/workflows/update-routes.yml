@@ -1,0 +1,36 @@
+name: Update routes.json
+
+on:
+  schedule:
+    - cron: '0 6 * * 1'   # Chaque lundi à 6h UTC
+  workflow_dispatch:        # Déclenchement manuel possible
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Run update script
+        run: python scripts/update_routes.py
+
+      - name: Check for changes
+        id: check
+        run: |
+          git diff --quiet routes.json && echo "changed=false" >> $GITHUB_OUTPUT || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Commit & push if changed
+        if: steps.check.outputs.changed == 'true'
+        run: |
+          git config user.name  "NightTrain Bot"
+          git config user.email "bot@nighttrain.app"
+          git add routes.json
+          git commit -m "chore: auto-update routes.json $(date -u +%Y-%m-%d)"
+          git push
