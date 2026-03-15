@@ -1,0 +1,103 @@
+name: Update Night Train Routes
+
+on:
+  schedule:
+    # Chaque lundi à 05:00 UTC (avant les heures de pointe Europe)
+    - cron: '0 5 * * 1'
+  workflow_dispatch:
+    # Déclenchement manuel depuis GitHub Actions > Run workflow
+    inputs:
+      dry_run:
+        description: 'Dry-run (affiche les changements sans écrire)'
+        required: false
+        default: 'false'
+        type: boolean
+
+# Permission explicite pour que le bot puisse committer
+permissions:
+  contents: write
+
+jobs:
+  update-routes:
+    name: Fetch & update routes.json
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      # 1. Checkout
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      # 2. Python
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      # 3. Dépendances
+      - name: Install dependencies
+        run: pip install requests pyyaml
+
+      # 4. Sauvegarde avant modification (pour la validation)
+      - name: Backup routes.json
+        run: cp routes.json routes_backup.json
+
+      # 5. Enrichissement
+      - name: Build routes.json
+        run: |
+          if [ "${{ inputs.dry_run }}" = "true" ]; then
+            python scripts/build_routes.py --dry-run
+          else
+            python scripts/build_routes.py
+          fi
+        env:
+          # Optionnel : ajouter SNCF_API_KEY dans les secrets GitHub pour enrichir
+          # automatiquement les Intercités de Nuit (data.sncf.com → "Mes tokens").
+          # Sans cette clé, les arrêts SNCF restent ceux de routes.json.
+          SNCF_API_KEY: ${{ secrets.SNCF_API_KEY || '' }}
+
+      # 6. Validation — bloque le commit si des routes ont régressé
+      - name: Validate routes.json
+        run: python scripts/validate.py routes_backup.json routes.json
+
+      # 7. Nettoyage du backup
+      - name: Cleanup backup
+        run: rm routes_backup.json
+        if: always()
+
+      # 8. Commit si des changements ont eu lieu
+      - name: Commit if changed
+        if: ${{ inputs.dry_run != 'true' }}
+        run: |
+          git config user.name  "nighttrain-bot[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add routes.json
+
+          # Ne committe que s'il y a vraiment des changements
+          if git diff --cached --quiet; then
+            echo "Aucun changement — pas de commit"
+            exit 0
+          fi
+
+          # Message de commit avec résumé des changements
+          SUMMARY=$(python -c "
+          import json, sys
+          with open('routes.json') as f:
+              d = json.load(f)
+          routes = d.get('routes', [])
+          active   = sum(1 for r in routes if r['status'] == 'active')
+          suspended = sum(1 for r in routes if r['status'] == 'suspended')
+          upcoming  = sum(1 for r in routes if r['status'] == 'upcoming')
+          print(f'{len(routes)} routes ({active} actives, {suspended} suspendues, {upcoming} à venir)')
+          ")
+
+          git commit -m "chore: auto-update routes $(date +%Y-%m-%d)
+
+          $SUMMARY
+
+          Mis à jour automatiquement par GitHub Actions."
+
+          git push

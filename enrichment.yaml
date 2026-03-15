@@ -1,0 +1,386 @@
+# enrichment.yaml
+# Configuration d'enrichissement automatique pour chaque route.
+# Le script build_routes.py lit ce fichier pour savoir comment
+# récupérer les arrêts et coordonnées à jour depuis les APIs.
+#
+# Champs possibles par route :
+#   api: hafas_db | hafas_oebb | sncf | entur | manual
+#   from_station: nom exact de la gare de départ (pour lookup Hafas)
+#   to_station: nom exact de la gare d'arrivée
+#   train_number: numéro du train pour filtrer les résultats (ex: "NJ 466")
+#   seasonal:
+#     active_from: "MM-DD"   # début de saison
+#     active_until: "MM-DD"  # fin de saison (peut croiser le 1er janvier)
+#
+# Si api: manual → le script conserve les stops existants dans routes.json
+# sans appel réseau. À utiliser pour les opérateurs sans API fiable.
+
+routes:
+
+  # ─── ÖBB NIGHTJET (via DB Hafas) ──────────────────────────────────────────
+
+  nightjet-vienna-hamburg:
+    api: hafas_db
+    from_station: "Wien Hbf"
+    to_station: "Hamburg Hbf"
+    train_number: "NJ 466"
+
+  nightjet-innsbruck-hamburg:
+    api: hafas_db
+    from_station: "Innsbruck Hbf"
+    to_station: "Hamburg Hbf"
+    train_number: "NJ 466"
+
+  nightjet-vienna-amsterdam:
+    api: hafas_db
+    from_station: "Wien Hbf"
+    to_station: "Amsterdam Centraal"
+    train_number: "NJ 421"
+
+  nightjet-zurich-amsterdam:
+    api: hafas_db
+    from_station: "Zürich HB"
+    to_station: "Amsterdam Centraal"
+    train_number: "NJ 421"
+
+  nightjet-zurich-hamburg:
+    api: hafas_db
+    from_station: "Zürich HB"
+    to_station: "Hamburg Hbf"
+    train_number: "NJ 40490"
+
+  nightjet-vienna-brussels:
+    api: hafas_db
+    from_station: "Wien Hbf"
+    to_station: "Bruxelles-Midi"
+    train_number: "NJ 491"
+
+  nightjet-vienna-rome:
+    api: hafas_oebb
+    from_station: "Wien Hbf"
+    to_station: "Roma Termini"
+    train_number: "NJ 295"
+
+  nightjet-vienna-milan:
+    api: hafas_oebb
+    from_station: "Wien Hbf"
+    to_station: "Milano Centrale"
+    train_number: "NJ 295"
+
+  nightjet-vienna-berlin:
+    api: hafas_db
+    from_station: "Wien Hbf"
+    to_station: "Berlin Hbf"
+    train_number: "NJ 456"
+
+  nightjet-zurich-zagreb:
+    api: hafas_db
+    from_station: "Zürich HB"
+    to_station: "Zagreb Gl."
+    train_number: "NJ 237"
+
+  nightjet-dusseldorf-vienna:
+    api: hafas_db
+    from_station: "Düsseldorf Hbf"
+    to_station: "Wien Hbf"
+    train_number: "NJ 421"
+
+  nightjet-munich-rome:
+    api: hafas_oebb
+    from_station: "München Hbf"
+    to_station: "Roma Termini"
+    train_number: "NJ 295"
+
+  nightjet-berlin-zurich:
+    api: hafas_db
+    from_station: "Berlin Hbf"
+    to_station: "Zürich HB"
+    train_number: "NJ 409"
+
+  nightjet-euronight-vienna-split:
+    api: hafas_db
+    from_station: "Wien Hbf"
+    to_station: "Split"
+    train_number: "EN 415"
+    seasonal:
+      active_from: "06-15"
+      active_until: "09-15"
+
+  nightjet-paris-berlin-suspended:
+    api: manual  # suspendu
+
+  nightjet-paris-vienna-suspended:
+    api: manual  # suspendu
+
+  nightjet-vienna-la-spezia-suspended:
+    api: manual  # suspendu
+
+  # ─── EUROPEAN SLEEPER ──────────────────────────────────────────────────────
+
+  european-sleeper-brussels-prague:
+    api: hafas_db
+    from_station: "Bruxelles-Midi"
+    to_station: "Praha hl.n."
+    train_number: "ES 453"
+
+  european-sleeper-paris-berlin:
+    api: hafas_db
+    from_station: "Paris Nord"
+    to_station: "Berlin Hbf"
+    train_number: "ES 453"
+
+  european-sleeper-brussels-milan:
+    api: hafas_db
+    from_station: "Bruxelles-Midi"
+    to_station: "Milano Centrale"
+    train_number: "ES 491"
+
+  european-sleeper-brussels-barcelona:
+    api: manual  # pas encore lancé
+
+  european-sleeper-amsterdam-milan:
+    api: hafas_db
+    from_station: "Amsterdam Centraal"
+    to_station: "Milano Centrale"
+    train_number: "ES 491"
+
+  # ─── SJ / SNÄLLTÅGET (Suède) ───────────────────────────────────────────────
+
+  sj-euronight-stockholm-berlin:
+    api: hafas_db
+    from_station: "Stockholm C"
+    to_station: "Berlin Hbf"
+    train_number: "EN 300"
+
+  snalltaget-stockholm-berlin:
+    api: hafas_db
+    from_station: "Stockholm C"
+    to_station: "Berlin Hbf"
+    train_number: "SN 1300"
+    seasonal:
+      active_from: "04-01"
+      active_until: "10-31"
+
+  snalltaget-malmo-austria:
+    api: hafas_db
+    from_station: "Malmö C"
+    to_station: "Innsbruck Hbf"
+    train_number: "SN 300"
+    seasonal:
+      active_from: "12-01"
+      active_until: "03-20"
+
+  # ─── SBS (Basel–Copenhague — ANNULÉ) ──────────────────────────────────────
+
+  sbs-basel-copenhagen-malmo:
+    api: manual  # annulé par le parlement suisse déc. 2025
+
+  # ─── PKP INTERCITY (Pologne) ───────────────────────────────────────────────
+
+  pkp-euronight-carpatia:
+    api: hafas_db
+    from_station: "Przemyśl Gł."
+    to_station: "München Hbf"
+    train_number: "EN 407"
+
+  pkp-euronight-chopin:
+    api: hafas_db
+    from_station: "Warszawa Wschodnia"
+    to_station: "Wien Hbf"
+    train_number: "EN 407"
+
+  pkp-baltic-express:
+    api: hafas_db
+    from_station: "Warszawa Wschodnia"
+    to_station: "Tallinn"
+    train_number: "EN 1300"
+    seasonal:
+      active_from: "06-15"
+      active_until: "08-31"
+
+  pkp-adriatic-express:
+    api: hafas_db
+    from_station: "Warszawa Wschodnia"
+    to_station: "Rijeka"
+    train_number: "EN 1300"
+    seasonal:
+      active_from: "06-15"
+      active_until: "08-31"
+
+  # ─── SNCF INTERCITÉS DE NUIT ───────────────────────────────────────────────
+  # api: manual — SNCF Open Data nécessite une clé API (data.sncf.com).
+  # Pour activer l'enrichissement automatique :
+  #   1. Créer un compte sur data.sncf.com et récupérer ta clé API
+  #   2. Ajouter SNCF_API_KEY dans les secrets GitHub du repo
+  #   3. Changer api: manual → api: sncf ci-dessous
+
+  intercites-de-nuit-paris-nice:
+    api: manual
+
+  intercites-de-nuit-paris-toulouse:
+    api: manual
+
+  intercites-de-nuit-paris-bourg-saint-maurice:
+    api: manual
+
+  intercites-de-nuit-paris-hendaye:
+    api: manual
+
+  # ─── TRENITALIA ICN ────────────────────────────────────────────────────────
+  # Trenitalia n'est pas dans DB/ÖBB Hafas → stops manuels conservés
+
+  trenitalia-icn-milan-palermo:
+    api: manual
+
+  trenitalia-icn-rome-palermo:
+    api: manual
+
+  trenitalia-icn-rome-lecce:
+    api: manual
+
+  trenitalia-icn-milan-lecce:
+    api: manual
+
+  trenitalia-icn-udine-rome:
+    api: manual
+
+  trenitalia-icn-milan-syracuse:
+    api: manual
+
+  trenitalia-icn-rome-syracuse:
+    api: manual
+
+  trenitalia-icn-turin-lecce:
+    api: manual
+
+  trenitalia-icn-turin-reggio-calabria:
+    api: manual
+
+  trenitalia-icn-rome-bolzano:
+    api: manual
+    seasonal:
+      active_from: "11-01"
+      active_until: "04-30"
+
+  trenitalia-icn-rome-venice-trieste:
+    api: manual
+
+  # ─── TRENITALIA ESPRESSO ───────────────────────────────────────────────────
+
+  trenitalia-espresso-rome-marseille:
+    api: manual
+    seasonal:
+      active_from: "06-01"
+      active_until: "09-30"
+
+  trenitalia-espresso-monaco:
+    api: manual
+    seasonal:
+      active_from: "06-01"
+      active_until: "09-30"
+
+  # ─── CALEDONIAN SLEEPER (UK) ───────────────────────────────────────────────
+
+  caledonian-sleeper-highlander:
+    api: manual
+
+  caledonian-sleeper-lowlander:
+    api: manual
+
+  # ─── NIGHT RIVIERA (UK) ────────────────────────────────────────────────────
+
+  night-riviera-london-penzance:
+    api: manual
+
+  # ─── RENFE TRENHOTEL (Espagne) ─────────────────────────────────────────────
+  # Renfe n'est pas dans Hafas → stops manuels
+
+  renfe-trenhotel-madrid-barcelona-suspended:
+    api: manual
+
+  renfe-trenhotel-madrid-lisbon:
+    api: manual
+
+  renfe-trenhotel-madrid-acoruna:
+    api: manual
+
+  renfe-trenhotel-madrid-vigo:
+    api: manual
+
+  renfe-trenhotel-barcelona-vigo:
+    api: manual
+
+  renfe-trenhotel-barcelona-acoruna:
+    api: manual
+
+  renfe-trenhotel-irun-lisbon:
+    api: manual
+
+  # ─── TRAVELSKI ─────────────────────────────────────────────────────────────
+
+  travelski-night-express-paris-ski:
+    api: manual
+    seasonal:
+      active_from: "12-19"
+      active_until: "03-20"
+
+  # ─── SJ / VY SUÈDE ────────────────────────────────────────────────────────
+
+  sj-vy-night-train-sweden:
+    api: hafas_db
+    from_station: "Stockholm C"
+    to_station: "Narvik"
+    train_number: "94"
+
+  # ─── EURONIGHT ZURICH–BUDAPEST ─────────────────────────────────────────────
+
+  euronight-zurich-budapest:
+    api: hafas_db
+    from_station: "Zürich HB"
+    to_station: "Budapest-Keleti"
+    train_number: "EN 467"
+
+  # ─── CD EURONIGHT PRAGUE–VIENNA ────────────────────────────────────────────
+
+  cd-euronight-prague-vienna:
+    api: hafas_db
+    from_station: "Praha hl.n."
+    to_station: "Wien Hbf"
+    train_number: "EN 477"
+
+  # ─── VY / SJ NORGE (Norvège) ───────────────────────────────────────────────
+
+  vy-nattog-oslo-bergen:
+    api: entur
+    from_station: "Oslo S"
+    to_station: "Bergen"
+    train_number: "607"
+
+  vy-nattog-oslo-trondheim:
+    api: entur
+    from_station: "Oslo S"
+    to_station: "Trondheim S"
+    train_number: "45"
+
+  vy-nattog-trondheim-bodo:
+    api: entur
+    from_station: "Trondheim S"
+    to_station: "Bodø"
+    train_number: "473"
+
+  go-ahead-norge-oslo-stavanger:
+    api: entur
+    from_station: "Oslo S"
+    to_station: "Stavanger"
+    train_number: "711"
+
+  # ─── MÁV (Hongrie) ─────────────────────────────────────────────────────────
+
+  mav-euronight-budapest-split:
+    api: hafas_db
+    from_station: "Budapest-Keleti"
+    to_station: "Split"
+    train_number: "EN 1204"
+    seasonal:
+      active_from: "05-25"
+      active_until: "09-28"

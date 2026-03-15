@@ -1,18 +1,842 @@
 {
   "version": 1,
-  "updated_at": "2026-03-15",
+  "updated_at": "2026-03-15T22:20:02Z",
   "routes": [
     {
-      "id": "nj-paris-berlin",
-      "name": "Paris → Berlin",
-      "operator": "Nightjet / SNCF",
-      "status": "suspended",
+      "id": "nightjet-vienna-hamburg",
+      "name": "Wien → Hamburg",
+      "operator": "ÖBB Nightjet",
+      "operator_url": "https://www.nightjet.com",
+      "status": "active",
       "operating_days": "Quotidien",
-      "duration": "13h15",
+      "duration": "~11h",
+      "is_direct": true,
+      "bike_allowed": true,
+      "pet_allowed": true,
+      "meal_included": true,
+      "shower_available": true,
+      "booking_url": "https://www.nightjet.com",
+      "coordinates": [
+        {
+          "lat": 48.2082,
+          "lon": 16.3738
+        },
+        {
+          "lat": 48.3069,
+          "lon": 14.2858
+        },
+        {
+          "lat": 47.8095,
+          "lon": 13.055
+        },
+        {
+          "lat": 48.1351,
+          "lon": 11.582
+        },
+        {
+          "lat": 49.4521,
+          "lon": 11.0767
+        },
+        {
+          "lat": 53.5511,
+          "lon": 9.9937
+        }
+      ],
+      "stops": [
+        {
+          "city": "Wien Hbf",
+          "arrival": null,
+          "departure": "19:40"
+        },
+        {
+          "city": "Linz",
+          "arrival": "21:11",
+          "departure": "21:17"
+        },
+        {
+          "city": "Salzburg",
+          "arrival": "22:42",
+          "departure": "22:50"
+        },
+        {
+          "city": "München",
+          "arrival": "00:35",
+          "departure": "00:55"
+        },
+        {
+          "city": "Nürnberg",
+          "arrival": "03:04",
+          "departure": "03:10"
+        },
+        {
+          "city": "Hamburg Hbf",
+          "arrival": "07:45",
+          "departure": null
+        }
+      ],
+      "accommodations": [
+        {
+          "type": "seat",
+          "startingPrice": 29
+        },
+        {
+          "type": "couchette",
+          "startingPrice": 59
+        },
+        {
+          "type": "sleeper",
+          "startingPrice": 109
+        },
+        {
+          "type": "mini_cabin",
+          "startingPrice": 79
+        }
+      ],
+      "notes": "Nouvelle génération Nightjet sur cette ligne depuis fin 2023. Mini Cabins disponibles."
+    },
+    {
+      "id": "nightjet-innsbruck-hamburg",
+      "name": "Innsbruck → Hamburg",
+      "operator": "ÖBB Nightjet",
+      "operator_url": "https://www.nightjet.com",
+      "status": "active",
+      "operating_days": "Quotidien",
+      "duration": "~11h30",
+      "is_direct": true,
+      "bike_allowed": true,
+      "pet_allowed": true,
+      "meal_included": true,
+      "shower_available": true,
+      "booking_url": "https://www.nightjet.com",
+      "coordinates": [
+        {
+          "lat": 47.2692,
+          "lon": 11.4041
+        },
+        {
+          "lat": 48.1351,
+          "lon": 11.582
+        },
+        {
+          "lat": 49.4521,
+          "lon": 11.0767
+        },
+        {
+          "lat": 53.5511,
+          "lon": 9.9937
+        }
+      ],
+      "stops": [
+        {
+          "city": "Innsbruck",
+          "arrival": null,
+          "departure": "20:05"
+        },
+        {
+          "city": "München",
+          "arrival": "22:00",
+          "departure": "22:30"
+        },
+        {
+          "city": "Nürnberg",
+          "arrival": "00:40",
+          "departure": "00:50"
+        },
+        {
+          "city": "Hamburg Hbf",
+          "arrival": "07:45",
+          "departure": null
+        }
+      ],
+      "accommodations": [
+        {
+          "type": "seat",
+          "startingPrice": 29
+        },
+        {
+          "type": "couchette",
+          "startingPrice": 59
+        },
+        {
+          "type": "sleeper",
+          "startingPrice": 109
+        },
+        {
+          "type": "mini_cabin",
+          "startingPrice": 79
+        }
+      ],
+      "notes": "Nouvelle génération Nightjet."
+    },
+    {
+      "id": "nightjet-vienna-amsterdam",
+      "name": "Wien → Amsterdam",
+      "operator": "ÖBB Nightjet",
+      "operator_url": "https://www.nightjet.com",
+      "status": "active",
+      "operating_days": "3x par semaine",
+      "duration": "~14h",
+      "is_direct": true,
+      "bike_allowed": true,
+      "pet_allowed": true,
+      "meal_included": true,
+      "shower_available": true,
+      "booking_url": "https://www.nightjet.com",
+      "coordinates": [
+        {
+          "lat": 48.2082,
+          "lon": 16.3738
+        },
+        {
+          "lat": 47.8095,
+          "lon": 13.055
+        },
+        {
+          "lat": 48.1351,
+          "lon": 11.582
+        },
+        {
+          "lat": 50.1109,
+          "lon": 8.6821
+        },
+        {
+          "lat": 50.9413,
+          "lon": 6.96
+        },
+        {
+          "lat": 52.3676,
+          "lon": 4.9041
+        }
+      ],
+      "stops": [
+        {
+          "city": "Wien Hbf",
+          "arrival": null,
+          "departure": "21:40"
+        },
+        {
+          "city": "Salzburg",
+          "arrival": "00:20",
+          "departure": "00:35"
+        },
+        {
+          "city": "München",
+          "arrival": "02:00",
+          "departure": "02:20"
+        },
+        {
+          "city": "Köln",
+          "arrival": "06:44",
+          "departure": "06:52"
+        },
+        {
+          "city": "Amsterdam Centraal",
+          "arrival": "09:20",
+          "departure": null
+        }
+      ],
+      "accommodations": [
+        {
+          "type": "seat",
+          "startingPrice": 29
+        },
+        {
+          "type": "couchette",
+          "startingPrice": 59
+        },
+        {
+          "type": "sleeper",
+          "startingPrice": 109
+        }
+      ],
+      "notes": "Nouvelles voitures avec douche/WC en suite depuis fin 2025 (pas encore la nouvelle génération complète)."
+    },
+    {
+      "id": "nightjet-zurich-amsterdam",
+      "name": "Zürich → Amsterdam",
+      "operator": "ÖBB Nightjet / SBB",
+      "operator_url": "https://www.nightjet.com",
+      "status": "active",
+      "operating_days": "Quotidien",
+      "duration": "~11h30",
+      "is_direct": true,
+      "bike_allowed": true,
+      "pet_allowed": true,
+      "meal_included": true,
+      "shower_available": true,
+      "booking_url": "https://www.nightjet.com",
+      "coordinates": [
+        {
+          "lat": 47.3769,
+          "lon": 8.5417
+        },
+        {
+          "lat": 47.5596,
+          "lon": 7.5886
+        },
+        {
+          "lat": 50.1109,
+          "lon": 8.6821
+        },
+        {
+          "lat": 50.9413,
+          "lon": 6.96
+        },
+        {
+          "lat": 52.3676,
+          "lon": 4.9041
+        }
+      ],
+      "stops": [
+        {
+          "city": "Zürich HB",
+          "arrival": null,
+          "departure": "21:05"
+        },
+        {
+          "city": "Basel",
+          "arrival": "21:50",
+          "departure": "22:00"
+        },
+        {
+          "city": "Köln",
+          "arrival": "02:15",
+          "departure": "02:30"
+        },
+        {
+          "city": "Amsterdam Centraal",
+          "arrival": "06:50",
+          "departure": null
+        }
+      ],
+      "accommodations": [
+        {
+          "type": "seat",
+          "startingPrice": 29
+        },
+        {
+          "type": "couchette",
+          "startingPrice": 59
+        },
+        {
+          "type": "sleeper",
+          "startingPrice": 109
+        }
+      ],
+      "notes": "Nouvelles voitures avec douche/WC en suite depuis fin 2025."
+    },
+    {
+      "id": "nightjet-zurich-hamburg",
+      "name": "Zürich → Hamburg",
+      "operator": "ÖBB Nightjet / SBB",
+      "operator_url": "https://www.nightjet.com",
+      "status": "active",
+      "operating_days": "Quotidien",
+      "duration": "~11h",
+      "is_direct": true,
+      "bike_allowed": true,
+      "pet_allowed": true,
+      "meal_included": true,
+      "shower_available": true,
+      "booking_url": "https://www.nightjet.com",
+      "coordinates": [
+        {
+          "lat": 47.3769,
+          "lon": 8.5417
+        },
+        {
+          "lat": 47.5596,
+          "lon": 7.5886
+        },
+        {
+          "lat": 50.1109,
+          "lon": 8.6821
+        },
+        {
+          "lat": 53.5511,
+          "lon": 9.9937
+        }
+      ],
+      "stops": [
+        {
+          "city": "Zürich HB",
+          "arrival": null,
+          "departure": "21:35"
+        },
+        {
+          "city": "Basel",
+          "arrival": "22:25",
+          "departure": "22:35"
+        },
+        {
+          "city": "Mannheim",
+          "arrival": "00:20",
+          "departure": "00:30"
+        },
+        {
+          "city": "Hamburg Hbf",
+          "arrival": "07:40",
+          "departure": null
+        }
+      ],
+      "accommodations": [
+        {
+          "type": "seat",
+          "startingPrice": 29
+        },
+        {
+          "type": "couchette",
+          "startingPrice": 59
+        },
+        {
+          "type": "sleeper",
+          "startingPrice": 109
+        },
+        {
+          "type": "mini_cabin",
+          "startingPrice": 79
+        }
+      ],
+      "notes": "Nouvelle génération Nightjet depuis décembre 2025."
+    },
+    {
+      "id": "nightjet-vienna-brussels",
+      "name": "Wien → Bruxelles",
+      "operator": "ÖBB Nightjet",
+      "operator_url": "https://www.nightjet.com",
+      "status": "active",
+      "operating_days": "3x par semaine",
+      "duration": "~13h",
+      "is_direct": true,
+      "bike_allowed": true,
+      "pet_allowed": true,
+      "meal_included": true,
+      "shower_available": true,
+      "booking_url": "https://www.nightjet.com",
+      "coordinates": [
+        {
+          "lat": 48.2082,
+          "lon": 16.3738
+        },
+        {
+          "lat": 47.8095,
+          "lon": 13.055
+        },
+        {
+          "lat": 48.1351,
+          "lon": 11.582
+        },
+        {
+          "lat": 50.1109,
+          "lon": 8.6821
+        },
+        {
+          "lat": 50.9413,
+          "lon": 6.96
+        },
+        {
+          "lat": 50.8503,
+          "lon": 4.3517
+        }
+      ],
+      "stops": [
+        {
+          "city": "Wien Hbf",
+          "arrival": null,
+          "departure": "21:50"
+        },
+        {
+          "city": "München",
+          "arrival": "01:50",
+          "departure": "02:10"
+        },
+        {
+          "city": "Köln",
+          "arrival": "06:00",
+          "departure": "06:10"
+        },
+        {
+          "city": "Bruxelles-Midi",
+          "arrival": "09:00",
+          "departure": null
+        }
+      ],
+      "accommodations": [
+        {
+          "type": "seat",
+          "startingPrice": 29
+        },
+        {
+          "type": "couchette",
+          "startingPrice": 59
+        },
+        {
+          "type": "sleeper",
+          "startingPrice": 109
+        }
+      ],
+      "notes": "Confirmé pour 2026 malgré l'arrêt des lignes Paris."
+    },
+    {
+      "id": "nightjet-vienna-rome",
+      "name": "Wien / Salzburg → Roma",
+      "operator": "ÖBB Nightjet",
+      "operator_url": "https://www.nightjet.com",
+      "status": "active",
+      "operating_days": "Quotidien",
+      "duration": "~13h",
+      "is_direct": true,
       "bike_allowed": true,
       "pet_allowed": false,
       "meal_included": true,
       "shower_available": true,
+      "booking_url": "https://www.nightjet.com",
+      "coordinates": [
+        {
+          "lat": 48.2082,
+          "lon": 16.3738
+        },
+        {
+          "lat": 47.8095,
+          "lon": 13.055
+        },
+        {
+          "lat": 47.2692,
+          "lon": 11.4041
+        },
+        {
+          "lat": 47.0016,
+          "lon": 11.5049
+        },
+        {
+          "lat": 45.4398,
+          "lon": 10.9924
+        },
+        {
+          "lat": 44.4949,
+          "lon": 11.3426
+        },
+        {
+          "lat": 41.9028,
+          "lon": 12.4964
+        }
+      ],
+      "stops": [
+        {
+          "city": "Wien Hbf",
+          "arrival": null,
+          "departure": "20:25"
+        },
+        {
+          "city": "Salzburg",
+          "arrival": "22:50",
+          "departure": "23:05"
+        },
+        {
+          "city": "Innsbruck",
+          "arrival": "00:40",
+          "departure": "00:55"
+        },
+        {
+          "city": "Verona",
+          "arrival": "03:10",
+          "departure": "03:20"
+        },
+        {
+          "city": "Bologna",
+          "arrival": "05:00",
+          "departure": "05:12"
+        },
+        {
+          "city": "Firenze",
+          "arrival": "06:30",
+          "departure": "06:40"
+        },
+        {
+          "city": "Roma Termini",
+          "arrival": "09:17",
+          "departure": null
+        }
+      ],
+      "accommodations": [
+        {
+          "type": "seat",
+          "startingPrice": 29
+        },
+        {
+          "type": "couchette",
+          "startingPrice": 59
+        },
+        {
+          "type": "sleeper",
+          "startingPrice": 109
+        }
+      ],
+      "notes": "Extension Milan-Gênes-La Spezia supprimée en décembre 2025."
+    },
+    {
+      "id": "nightjet-vienna-milan",
+      "name": "Wien / Salzburg → Milano",
+      "operator": "ÖBB Nightjet",
+      "operator_url": "https://www.nightjet.com",
+      "status": "active",
+      "operating_days": "Quotidien",
+      "duration": "~9h",
+      "is_direct": true,
+      "bike_allowed": true,
+      "pet_allowed": false,
+      "meal_included": true,
+      "shower_available": false,
+      "booking_url": "https://www.nightjet.com",
+      "coordinates": [
+        {
+          "lat": 48.2082,
+          "lon": 16.3738
+        },
+        {
+          "lat": 47.8095,
+          "lon": 13.055
+        },
+        {
+          "lat": 47.2692,
+          "lon": 11.4041
+        },
+        {
+          "lat": 47.0016,
+          "lon": 11.5049
+        },
+        {
+          "lat": 45.4398,
+          "lon": 10.9924
+        },
+        {
+          "lat": 45.4654,
+          "lon": 9.1895
+        }
+      ],
+      "stops": [
+        {
+          "city": "Wien Hbf",
+          "arrival": null,
+          "departure": "22:30"
+        },
+        {
+          "city": "Salzburg",
+          "arrival": "00:40",
+          "departure": "00:55"
+        },
+        {
+          "city": "Innsbruck",
+          "arrival": "02:30",
+          "departure": "02:45"
+        },
+        {
+          "city": "Verona",
+          "arrival": "05:05",
+          "departure": "05:15"
+        },
+        {
+          "city": "Milano Centrale",
+          "arrival": "07:35",
+          "departure": null
+        }
+      ],
+      "accommodations": [
+        {
+          "type": "seat",
+          "startingPrice": 29
+        },
+        {
+          "type": "couchette",
+          "startingPrice": 59
+        },
+        {
+          "type": "sleeper",
+          "startingPrice": 109
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "nightjet-vienna-berlin",
+      "name": "Wien → Berlin",
+      "operator": "ÖBB Nightjet",
+      "operator_url": "https://www.nightjet.com",
+      "status": "active",
+      "operating_days": "Quotidien",
+      "duration": "~9h30",
+      "is_direct": true,
+      "bike_allowed": true,
+      "pet_allowed": true,
+      "meal_included": true,
+      "shower_available": true,
+      "booking_url": "https://www.nightjet.com",
+      "coordinates": [
+        {
+          "lat": 48.2082,
+          "lon": 16.3738
+        },
+        {
+          "lat": 48.3069,
+          "lon": 14.2858
+        },
+        {
+          "lat": 50.0755,
+          "lon": 14.4378
+        },
+        {
+          "lat": 51.0504,
+          "lon": 13.7373
+        },
+        {
+          "lat": 52.52,
+          "lon": 13.405
+        }
+      ],
+      "stops": [
+        {
+          "city": "Wien Hbf",
+          "arrival": null,
+          "departure": "21:35"
+        },
+        {
+          "city": "Linz",
+          "arrival": "22:56",
+          "departure": "23:00"
+        },
+        {
+          "city": "Passau",
+          "arrival": "00:02",
+          "departure": "00:08"
+        },
+        {
+          "city": "Nürnberg",
+          "arrival": "02:22",
+          "departure": "02:30"
+        },
+        {
+          "city": "Leipzig",
+          "arrival": "04:55",
+          "departure": "05:05"
+        },
+        {
+          "city": "Berlin Hbf",
+          "arrival": "07:20",
+          "departure": null
+        }
+      ],
+      "accommodations": [
+        {
+          "type": "seat",
+          "startingPrice": 29
+        },
+        {
+          "type": "couchette",
+          "startingPrice": 59
+        },
+        {
+          "type": "sleeper",
+          "startingPrice": 109
+        },
+        {
+          "type": "mini_cabin",
+          "startingPrice": 79
+        }
+      ],
+      "notes": "Nouvelle génération Nightjet."
+    },
+    {
+      "id": "nightjet-zurich-zagreb",
+      "name": "Zürich → Zagreb",
+      "operator": "ÖBB Nightjet / HŽ",
+      "operator_url": "https://www.nightjet.com",
+      "status": "active",
+      "operating_days": "Quotidien",
+      "duration": "~12h",
+      "is_direct": true,
+      "bike_allowed": true,
+      "pet_allowed": false,
+      "meal_included": false,
+      "shower_available": false,
+      "booking_url": "https://www.nightjet.com",
+      "coordinates": [
+        {
+          "lat": 47.3769,
+          "lon": 8.5417
+        },
+        {
+          "lat": 47.2692,
+          "lon": 11.4041
+        },
+        {
+          "lat": 47.8095,
+          "lon": 13.055
+        },
+        {
+          "lat": 48.2082,
+          "lon": 16.3738
+        },
+        {
+          "lat": 46.0511,
+          "lon": 14.5051
+        },
+        {
+          "lat": 45.815,
+          "lon": 15.9819
+        }
+      ],
+      "stops": [
+        {
+          "city": "Zürich HB",
+          "arrival": null,
+          "departure": "22:04"
+        },
+        {
+          "city": "Innsbruck",
+          "arrival": "01:30",
+          "departure": "01:45"
+        },
+        {
+          "city": "Villach",
+          "arrival": "04:20",
+          "departure": "04:35"
+        },
+        {
+          "city": "Ljubljana",
+          "arrival": "07:00",
+          "departure": "07:15"
+        },
+        {
+          "city": "Zagreb",
+          "arrival": "09:04",
+          "departure": null
+        }
+      ],
+      "accommodations": [
+        {
+          "type": "couchette",
+          "startingPrice": 49
+        },
+        {
+          "type": "sleeper",
+          "startingPrice": 99
+        }
+      ],
+      "notes": "Via Bled (arrêt à Lesce-Bled). Très panoramique."
+    },
+    {
+      "id": "nightjet-paris-berlin-suspended",
+      "name": "Paris → Berlin",
+      "operator": "ÖBB Nightjet",
+      "operator_url": "https://www.nightjet.com",
+      "status": "suspended",
+      "operating_days": "Suspendu depuis décembre 2025",
+      "duration": "~14h",
+      "is_direct": true,
+      "bike_allowed": true,
+      "pet_allowed": true,
+      "meal_included": true,
+      "shower_available": false,
       "booking_url": "https://www.nightjet.com",
       "coordinates": [
         {
@@ -25,11 +849,15 @@
         },
         {
           "lat": 48.7758,
-          "lon": 9.177
+          "lon": 9.1829
         },
         {
           "lat": 48.1351,
           "lon": 11.582
+        },
+        {
+          "lat": 49.4521,
+          "lon": 11.0767
         },
         {
           "lat": 52.52,
@@ -40,26 +868,16 @@
         {
           "city": "Paris Est",
           "arrival": null,
-          "departure": "19:42"
+          "departure": "19:55"
         },
         {
           "city": "Strasbourg",
-          "arrival": "23:00",
-          "departure": "23:10"
-        },
-        {
-          "city": "Stuttgart",
-          "arrival": "00:44",
-          "departure": "00:50"
-        },
-        {
-          "city": "Munich",
-          "arrival": "02:40",
-          "departure": "02:55"
+          "arrival": "22:20",
+          "departure": "22:35"
         },
         {
           "city": "Berlin Hbf",
-          "arrival": "08:57",
+          "arrival": "10:00",
           "departure": null
         }
       ],
@@ -77,19 +895,21 @@
           "startingPrice": 109
         }
       ],
-      "is_direct": true
+      "notes": "Arrêté en décembre 2025 suite au retrait des subventions françaises. Repris par European Sleeper en mars 2026."
     },
     {
-      "id": "nj-paris-vienna",
-      "name": "Paris → Vienne",
-      "operator": "Nightjet / SNCF",
+      "id": "nightjet-paris-vienna-suspended",
+      "name": "Paris → Wien",
+      "operator": "ÖBB Nightjet",
+      "operator_url": "https://www.nightjet.com",
       "status": "suspended",
-      "operating_days": "Quotidien",
-      "duration": "11h56",
+      "operating_days": "Suspendu depuis décembre 2025",
+      "duration": "~15h",
+      "is_direct": true,
       "bike_allowed": true,
-      "pet_allowed": false,
+      "pet_allowed": true,
       "meal_included": true,
-      "shower_available": true,
+      "shower_available": false,
       "booking_url": "https://www.nightjet.com",
       "coordinates": [
         {
@@ -101,12 +921,12 @@
           "lon": 7.7521
         },
         {
-          "lat": 48.1351,
-          "lon": 11.582
+          "lat": 48.7758,
+          "lon": 9.1829
         },
         {
-          "lat": 47.8095,
-          "lon": 13.055
+          "lat": 48.1351,
+          "lon": 11.582
         },
         {
           "lat": 48.2082,
@@ -117,26 +937,21 @@
         {
           "city": "Paris Est",
           "arrival": null,
-          "departure": "19:42"
+          "departure": "19:55"
         },
         {
           "city": "Strasbourg",
-          "arrival": "23:00",
-          "departure": "23:10"
+          "arrival": "22:20",
+          "departure": "22:35"
         },
         {
-          "city": "Munich",
-          "arrival": "02:40",
-          "departure": "02:55"
+          "city": "München",
+          "arrival": "02:00",
+          "departure": "02:20"
         },
         {
-          "city": "Salzburg",
-          "arrival": "04:12",
-          "departure": "04:18"
-        },
-        {
-          "city": "Vienne Hbf",
-          "arrival": "07:38",
+          "city": "Wien Hbf",
+          "arrival": "09:05",
           "departure": null
         }
       ],
@@ -152,212 +967,78 @@
         {
           "type": "sleeper",
           "startingPrice": 109
-        },
-        {
-          "type": "suite",
-          "startingPrice": 199
         }
       ],
-      "is_direct": true
+      "notes": "Arrêté en décembre 2025. Faisait partie du même train que Paris-Berlin, qui se séparait à Strasbourg."
     },
     {
-      "id": "sncf-paris-barcelona",
-      "name": "Paris → Barcelone",
-      "operator": "SNCF / Renfe",
-      "status": "active",
-      "operating_days": "Lun, Mer, Ven, Sam",
-      "duration": "9h00",
+      "id": "nightjet-vienna-la-spezia-suspended",
+      "name": "Wien / München → La Spezia",
+      "operator": "ÖBB Nightjet",
+      "operator_url": "https://www.nightjet.com",
+      "status": "suspended",
+      "operating_days": "Suspendu depuis décembre 2025",
+      "duration": "~11h",
+      "is_direct": true,
       "bike_allowed": false,
-      "pet_allowed": true,
+      "pet_allowed": false,
       "meal_included": false,
       "shower_available": false,
-      "booking_url": "https://www.sncf-connect.com",
-      "coordinates": [
-        {
-          "lat": 48.8566,
-          "lon": 2.3522
-        },
-        {
-          "lat": 45.764,
-          "lon": 4.8357
-        },
-        {
-          "lat": 42.6887,
-          "lon": 2.8948
-        },
-        {
-          "lat": 41.3851,
-          "lon": 2.1734
-        }
-      ],
-      "stops": [
-        {
-          "city": "Paris Austerlitz",
-          "arrival": null,
-          "departure": "21:25"
-        },
-        {
-          "city": "Lyon Part-Dieu",
-          "arrival": "23:37",
-          "departure": "23:45"
-        },
-        {
-          "city": "Perpignan",
-          "arrival": "03:58",
-          "departure": "04:05"
-        },
-        {
-          "city": "Barcelone Sants",
-          "arrival": "06:25",
-          "departure": null
-        }
-      ],
-      "accommodations": [
-        {
-          "type": "seat",
-          "startingPrice": 25
-        },
-        {
-          "type": "couchette",
-          "startingPrice": 55
-        },
-        {
-          "type": "sleeper",
-          "startingPrice": 99
-        }
-      ],
-      "is_direct": true
-    },
-    {
-      "id": "nj-amsterdam-vienna",
-      "name": "Amsterdam → Vienne",
-      "operator": "Nightjet",
-      "status": "active",
-      "operating_days": "Quotidien",
-      "duration": "13h18",
-      "bike_allowed": true,
-      "pet_allowed": false,
-      "meal_included": true,
-      "shower_available": true,
       "booking_url": "https://www.nightjet.com",
       "coordinates": [
         {
-          "lat": 52.3676,
-          "lon": 4.9041
-        },
-        {
-          "lat": 50.1109,
-          "lon": 8.6821
-        },
-        {
-          "lat": 48.1351,
-          "lon": 11.582
+          "lat": 48.2082,
+          "lon": 16.3738
         },
         {
           "lat": 47.8095,
           "lon": 13.055
         },
         {
-          "lat": 48.2082,
-          "lon": 16.3738
-        }
-      ],
-      "stops": [
-        {
-          "city": "Amsterdam Centraal",
-          "arrival": null,
-          "departure": "18:20"
+          "lat": 47.2692,
+          "lon": 11.4041
         },
         {
-          "city": "Frankfurt Hbf",
-          "arrival": "22:49",
-          "departure": "23:02"
-        },
-        {
-          "city": "Munich Hbf",
-          "arrival": "02:40",
-          "departure": "02:55"
-        },
-        {
-          "city": "Salzburg",
-          "arrival": "04:12",
-          "departure": "04:18"
-        },
-        {
-          "city": "Vienne Hbf",
-          "arrival": "07:38",
-          "departure": null
-        }
-      ],
-      "accommodations": [
-        {
-          "type": "seat",
-          "startingPrice": 29
-        },
-        {
-          "type": "couchette",
-          "startingPrice": 59
-        },
-        {
-          "type": "sleeper",
-          "startingPrice": 109
-        },
-        {
-          "type": "suite",
-          "startingPrice": 199
-        }
-      ],
-      "is_direct": true
-    },
-    {
-      "id": "nj-zurich-rome",
-      "name": "Zurich → Rome",
-      "operator": "Nightjet / Trenitalia",
-      "status": "active",
-      "operating_days": "Quotidien",
-      "duration": "9h20",
-      "bike_allowed": false,
-      "pet_allowed": false,
-      "meal_included": true,
-      "shower_available": true,
-      "booking_url": "https://www.nightjet.com",
-      "coordinates": [
-        {
-          "lat": 47.3769,
-          "lon": 8.5417
+          "lat": 47.0016,
+          "lon": 11.5049
         },
         {
           "lat": 45.4654,
-          "lon": 9.19
+          "lon": 9.1895
         },
         {
-          "lat": 43.7696,
-          "lon": 11.2558
+          "lat": 44.4087,
+          "lon": 8.9327
         },
         {
-          "lat": 41.9028,
-          "lon": 12.4964
+          "lat": 44.1024,
+          "lon": 9.824
         }
       ],
       "stops": [
         {
-          "city": "Zurich Hbf",
+          "city": "Wien Hbf",
           "arrival": null,
-          "departure": "21:05"
+          "departure": "22:30"
         },
         {
-          "city": "Milan Centrale",
-          "arrival": "23:45",
-          "departure": "00:10"
+          "city": "Salzburg",
+          "arrival": "00:55",
+          "departure": "01:05"
         },
         {
-          "city": "Florence SMN",
-          "arrival": "02:48",
-          "departure": "02:55"
+          "city": "Milano",
+          "arrival": "07:35",
+          "departure": "07:55"
         },
         {
-          "city": "Rome Termini",
-          "arrival": "06:25",
+          "city": "Genova",
+          "arrival": "09:30",
+          "departure": "09:40"
+        },
+        {
+          "city": "La Spezia",
+          "arrival": "10:35",
           "departure": null
         }
       ],
@@ -365,678 +1046,98 @@
         {
           "type": "couchette",
           "startingPrice": 49
-        },
-        {
-          "type": "sleeper",
-          "startingPrice": 99
-        },
-        {
-          "type": "suite",
-          "startingPrice": 189
         }
       ],
-      "is_direct": true
+      "notes": "Supprimé en décembre 2025. Extension au-delà de Milan non rentable."
     },
     {
-      "id": "cal-london-edinburgh",
-      "name": "Londres → Édimbourg",
-      "operator": "Caledonian Sleeper",
+      "id": "european-sleeper-brussels-prague",
+      "name": "Bruxelles → Prague",
+      "operator": "European Sleeper",
+      "operator_url": "https://www.europeansleeper.eu",
       "status": "active",
-      "operating_days": "Lun – Sam",
-      "duration": "5h45",
-      "bike_allowed": true,
-      "pet_allowed": true,
-      "meal_included": false,
-      "shower_available": true,
-      "booking_url": "https://www.sleeper.scot",
-      "coordinates": [
-        {
-          "lat": 51.5074,
-          "lon": -0.1278
-        },
-        {
-          "lat": 52.9548,
-          "lon": -1.1581
-        },
-        {
-          "lat": 54.9783,
-          "lon": -1.6178
-        },
-        {
-          "lat": 55.9533,
-          "lon": -3.1883
-        }
-      ],
-      "stops": [
-        {
-          "city": "London Euston",
-          "arrival": null,
-          "departure": "23:45"
-        },
-        {
-          "city": "Nottingham",
-          "arrival": "01:10",
-          "departure": "01:15"
-        },
-        {
-          "city": "Newcastle",
-          "arrival": "03:28",
-          "departure": "03:33"
-        },
-        {
-          "city": "Edinburgh Waverley",
-          "arrival": "05:30",
-          "departure": null
-        }
-      ],
-      "accommodations": [
-        {
-          "type": "seat",
-          "startingPrice": 19
-        },
-        {
-          "type": "couchette",
-          "startingPrice": 45
-        },
-        {
-          "type": "sleeper",
-          "startingPrice": 85
-        }
-      ],
-      "is_direct": true
-    },
-    {
-      "id": "nj-berlin-vienna",
-      "name": "Berlin → Vienne",
-      "operator": "Nightjet",
-      "status": "active",
-      "operating_days": "Quotidien",
-      "duration": "8h35",
+      "operating_days": "3x par semaine",
+      "duration": "~15h",
+      "is_direct": true,
       "bike_allowed": true,
       "pet_allowed": false,
       "meal_included": true,
       "shower_available": false,
-      "booking_url": "https://www.nightjet.com",
+      "booking_url": "https://www.europeansleeper.eu",
       "coordinates": [
+        {
+          "lat": 50.8503,
+          "lon": 4.3517
+        },
+        {
+          "lat": 52.3784,
+          "lon": 4.9009
+        },
         {
           "lat": 52.52,
           "lon": 13.405
         },
         {
+          "lat": 51.0504,
+          "lon": 13.7373
+        },
+        {
           "lat": 50.0755,
           "lon": 14.4378
-        },
-        {
-          "lat": 48.2082,
-          "lon": 16.3738
         }
       ],
       "stops": [
         {
-          "city": "Berlin Hbf",
+          "city": "Bruxelles-Midi",
           "arrival": null,
-          "departure": "21:40"
-        },
-        {
-          "city": "Prague",
-          "arrival": "01:22",
-          "departure": "01:38"
-        },
-        {
-          "city": "Vienne Hbf",
-          "arrival": "06:15",
-          "departure": null
-        }
-      ],
-      "accommodations": [
-        {
-          "type": "seat",
-          "startingPrice": 29
-        },
-        {
-          "type": "couchette",
-          "startingPrice": 55
-        },
-        {
-          "type": "sleeper",
-          "startingPrice": 99
-        }
-      ],
-      "is_direct": true
-    },
-    {
-      "id": "nj-vienna-hamburg",
-      "name": "Vienne → Hamburg",
-      "operator": "Nightjet",
-      "status": "active",
-      "operating_days": "Quotidien",
-      "duration": "11h30",
-      "bike_allowed": true,
-      "pet_allowed": false,
-      "meal_included": true,
-      "shower_available": true,
-      "booking_url": "https://www.nightjet.com",
-      "coordinates": [
-        {
-          "lat": 48.2082,
-          "lon": 16.3738
-        },
-        {
-          "lat": 48.1351,
-          "lon": 11.582
-        },
-        {
-          "lat": 50.1109,
-          "lon": 8.6821
-        },
-        {
-          "lat": 53.5753,
-          "lon": 10.0153
-        }
-      ],
-      "stops": [
-        {
-          "city": "Vienne Hbf",
-          "arrival": null,
-          "departure": "20:27"
-        },
-        {
-          "city": "Munich Hbf",
-          "arrival": "23:35",
-          "departure": "23:50"
-        },
-        {
-          "city": "Frankfurt",
-          "arrival": "02:15",
-          "departure": "02:25"
-        },
-        {
-          "city": "Hamburg Hbf",
-          "arrival": "07:57",
-          "departure": null
-        }
-      ],
-      "accommodations": [
-        {
-          "type": "seat",
-          "startingPrice": 29
-        },
-        {
-          "type": "couchette",
-          "startingPrice": 59
-        },
-        {
-          "type": "sleeper",
-          "startingPrice": 119
-        },
-        {
-          "type": "suite",
-          "startingPrice": 199
-        }
-      ],
-      "is_direct": true
-    },
-    {
-      "id": "nj-zurich-vienna",
-      "name": "Zurich → Vienne",
-      "operator": "Nightjet",
-      "status": "active",
-      "operating_days": "Quotidien",
-      "duration": "9h00",
-      "bike_allowed": true,
-      "pet_allowed": false,
-      "meal_included": true,
-      "shower_available": false,
-      "booking_url": "https://www.nightjet.com",
-      "coordinates": [
-        {
-          "lat": 47.3769,
-          "lon": 8.5417
-        },
-        {
-          "lat": 47.8095,
-          "lon": 13.055
-        },
-        {
-          "lat": 48.2082,
-          "lon": 16.3738
-        }
-      ],
-      "stops": [
-        {
-          "city": "Zurich Hbf",
-          "arrival": null,
-          "departure": "21:30"
-        },
-        {
-          "city": "Salzburg",
-          "arrival": "00:58",
-          "departure": "01:05"
-        },
-        {
-          "city": "Vienne Hbf",
-          "arrival": "06:30",
-          "departure": null
-        }
-      ],
-      "accommodations": [
-        {
-          "type": "couchette",
-          "startingPrice": 49
-        },
-        {
-          "type": "sleeper",
-          "startingPrice": 99
-        }
-      ],
-      "is_direct": true
-    },
-    {
-      "id": "sncf-paris-toulouse",
-      "name": "Paris → Toulouse",
-      "operator": "SNCF Intercités de Nuit",
-      "status": "active",
-      "operating_days": "Quotidien",
-      "duration": "6h45",
-      "bike_allowed": false,
-      "pet_allowed": true,
-      "meal_included": false,
-      "shower_available": false,
-      "booking_url": "https://www.sncf-connect.com",
-      "coordinates": [
-        {
-          "lat": 48.8566,
-          "lon": 2.3522
-        },
-        {
-          "lat": 44.8378,
-          "lon": 0.5792
-        },
-        {
-          "lat": 43.6047,
-          "lon": 1.4442
-        }
-      ],
-      "stops": [
-        {
-          "city": "Paris Austerlitz",
-          "arrival": null,
-          "departure": "22:02"
-        },
-        {
-          "city": "Bordeaux",
-          "arrival": "01:40",
-          "departure": "01:50"
-        },
-        {
-          "city": "Toulouse Matabiau",
-          "arrival": "04:47",
-          "departure": null
-        }
-      ],
-      "accommodations": [
-        {
-          "type": "seat",
-          "startingPrice": 15
-        },
-        {
-          "type": "couchette",
-          "startingPrice": 35
-        }
-      ],
-      "is_direct": true
-    },
-    {
-      "id": "sncf-paris-briancon",
-      "name": "Paris → Briançon",
-      "operator": "SNCF Intercités de Nuit",
-      "status": "active",
-      "operating_days": "Ven, Sam",
-      "duration": "8h10",
-      "bike_allowed": false,
-      "pet_allowed": true,
-      "meal_included": false,
-      "shower_available": false,
-      "booking_url": "https://www.sncf-connect.com",
-      "coordinates": [
-        {
-          "lat": 48.8566,
-          "lon": 2.3522
-        },
-        {
-          "lat": 45.1885,
-          "lon": 5.7245
-        },
-        {
-          "lat": 44.8965,
-          "lon": 6.6364
-        }
-      ],
-      "stops": [
-        {
-          "city": "Paris Austerlitz",
-          "arrival": null,
-          "departure": "21:03"
-        },
-        {
-          "city": "Grenoble",
-          "arrival": "02:15",
-          "departure": "02:25"
-        },
-        {
-          "city": "Briançon",
-          "arrival": "05:13",
-          "departure": null
-        }
-      ],
-      "accommodations": [
-        {
-          "type": "seat",
-          "startingPrice": 15
-        },
-        {
-          "type": "couchette",
-          "startingPrice": 35
-        }
-      ],
-      "is_direct": true
-    },
-    {
-      "id": "sj-stockholm-hamburg",
-      "name": "Stockholm → Hamburg",
-      "operator": "Snälltåget",
-      "status": "active",
-      "operating_days": "Ven (saison estivale)",
-      "duration": "14h00",
-      "bike_allowed": true,
-      "pet_allowed": false,
-      "meal_included": false,
-      "shower_available": false,
-      "booking_url": "https://www.snalltaget.se",
-      "coordinates": [
-        {
-          "lat": 59.3293,
-          "lon": 18.0686
-        },
-        {
-          "lat": 57.7089,
-          "lon": 11.9746
-        },
-        {
-          "lat": 53.5753,
-          "lon": 10.0153
-        }
-      ],
-      "stops": [
-        {
-          "city": "Stockholm",
-          "arrival": null,
-          "departure": "17:00"
-        },
-        {
-          "city": "Gothenburg",
-          "arrival": "20:05",
-          "departure": "20:15"
-        },
-        {
-          "city": "Hamburg Hbf",
-          "arrival": "07:00",
-          "departure": null
-        }
-      ],
-      "accommodations": [
-        {
-          "type": "seat",
-          "startingPrice": 39
-        },
-        {
-          "type": "couchette",
-          "startingPrice": 79
-        },
-        {
-          "type": "sleeper",
-          "startingPrice": 139
-        }
-      ],
-      "is_direct": true
-    },
-    {
-      "id": "sncf-paris-nice",
-      "name": "Paris → Nice",
-      "operator": "SNCF Intercités de Nuit",
-      "status": "suspended",
-      "operating_days": "Suspendu depuis 2017",
-      "duration": "9h04",
-      "bike_allowed": false,
-      "pet_allowed": false,
-      "meal_included": false,
-      "shower_available": false,
-      "booking_url": "https://www.sncf-connect.com",
-      "coordinates": [
-        {
-          "lat": 48.8566,
-          "lon": 2.3522
-        },
-        {
-          "lat": 45.764,
-          "lon": 4.8357
-        },
-        {
-          "lat": 43.7102,
-          "lon": 7.262
-        }
-      ],
-      "stops": [
-        {
-          "city": "Paris Austerlitz",
-          "arrival": null,
-          "departure": "21:03"
-        },
-        {
-          "city": "Lyon Part-Dieu",
-          "arrival": "23:20",
-          "departure": "23:28"
-        },
-        {
-          "city": "Nice Ville",
-          "arrival": "06:07",
-          "departure": null
-        }
-      ],
-      "accommodations": [
-        {
-          "type": "seat",
-          "startingPrice": 20
-        },
-        {
-          "type": "couchette",
-          "startingPrice": 40
-        }
-      ],
-      "is_direct": true
-    },
-    {
-      "id": "rzd-paris-moscow",
-      "name": "Paris → Moscou",
-      "operator": "RZD / SNCF",
-      "status": "suspended",
-      "operating_days": "Suspendu depuis 2022",
-      "duration": "29h53",
-      "bike_allowed": false,
-      "pet_allowed": false,
-      "meal_included": true,
-      "shower_available": true,
-      "booking_url": "https://www.rzd.ru",
-      "coordinates": [
-        {
-          "lat": 48.8566,
-          "lon": 2.3522
-        },
-        {
-          "lat": 52.2297,
-          "lon": 21.0122
-        },
-        {
-          "lat": 55.7558,
-          "lon": 37.6173
-        }
-      ],
-      "stops": [
-        {
-          "city": "Paris Nord",
-          "arrival": null,
-          "departure": "14:00"
-        },
-        {
-          "city": "Varsovie",
-          "arrival": "06:30",
-          "departure": "07:10"
-        },
-        {
-          "city": "Moscou",
-          "arrival": "19:53",
-          "departure": null
-        }
-      ],
-      "accommodations": [
-        {
-          "type": "couchette",
-          "startingPrice": 150
-        },
-        {
-          "type": "sleeper",
-          "startingPrice": 280
-        }
-      ],
-      "is_direct": false
-    },
-    {
-      "id": "nj-paris-brussels-amsterdam",
-      "name": "Paris → Bruxelles → Amsterdam",
-      "operator": "Nightjet / SNCB",
-      "status": "upcoming",
-      "operating_days": "Prévu 2026",
-      "duration": "4h15",
-      "bike_allowed": true,
-      "pet_allowed": false,
-      "meal_included": false,
-      "shower_available": false,
-      "booking_url": "https://www.nightjet.com",
-      "coordinates": [
-        {
-          "lat": 48.8566,
-          "lon": 2.3522
-        },
-        {
-          "lat": 50.8503,
-          "lon": 4.3517
-        },
-        {
-          "lat": 52.3676,
-          "lon": 4.9041
-        }
-      ],
-      "stops": [
-        {
-          "city": "Paris Nord",
-          "arrival": null,
-          "departure": "23:00"
-        },
-        {
-          "city": "Bruxelles Midi",
-          "arrival": "01:10",
-          "departure": "01:20"
+          "departure": "19:17"
         },
         {
           "city": "Amsterdam Centraal",
-          "arrival": "03:15",
+          "arrival": "21:03",
+          "departure": "21:20"
+        },
+        {
+          "city": "Berlin Hbf",
+          "arrival": "02:30",
+          "departure": "02:50"
+        },
+        {
+          "city": "Dresden",
+          "arrival": "04:45",
+          "departure": "05:00"
+        },
+        {
+          "city": "Praha hl.n.",
+          "arrival": "08:20",
           "departure": null
         }
       ],
       "accommodations": [
         {
           "type": "seat",
-          "startingPrice": 25
+          "startingPrice": 35
         },
-        {
-          "type": "couchette",
-          "startingPrice": 55
-        }
-      ],
-      "is_direct": true
-    },
-    {
-      "id": "nj-vienna-brussels",
-      "name": "Vienne → Bruxelles",
-      "operator": "Nightjet",
-      "status": "upcoming",
-      "operating_days": "Prévu 2026",
-      "duration": "10h11",
-      "bike_allowed": true,
-      "pet_allowed": false,
-      "meal_included": true,
-      "shower_available": true,
-      "booking_url": "https://www.nightjet.com",
-      "coordinates": [
-        {
-          "lat": 48.2082,
-          "lon": 16.3738
-        },
-        {
-          "lat": 48.1351,
-          "lon": 11.582
-        },
-        {
-          "lat": 50.9333,
-          "lon": 6.9583
-        },
-        {
-          "lat": 50.8503,
-          "lon": 4.3517
-        }
-      ],
-      "stops": [
-        {
-          "city": "Vienne Hbf",
-          "arrival": null,
-          "departure": "20:27"
-        },
-        {
-          "city": "Munich Hbf",
-          "arrival": "23:35",
-          "departure": "23:50"
-        },
-        {
-          "city": "Cologne Hbf",
-          "arrival": "04:12",
-          "departure": "04:20"
-        },
-        {
-          "city": "Bruxelles Midi",
-          "arrival": "06:38",
-          "departure": null
-        }
-      ],
-      "accommodations": [
         {
           "type": "couchette",
           "startingPrice": 59
         },
         {
           "type": "sleeper",
-          "startingPrice": 119
+          "startingPrice": 149
         }
       ],
-      "is_direct": true
+      "notes": "Ligne fondatrice d'European Sleeper. Plus de 240 000 passagers transportés. Compartiments femmes disponibles sur demande."
     },
     {
-      "id": "es-paris-berlin",
+      "id": "european-sleeper-paris-berlin",
       "name": "Paris → Berlin",
       "operator": "European Sleeper",
+      "operator_url": "https://www.europeansleeper.eu",
       "status": "active",
-      "operating_days": "Mar, Jeu, Sam (dès 26 mars 2026)",
-      "duration": "14h00",
-      "is_direct": false,
+      "operating_days": "3x par semaine (dim/mar/jeu de Paris)",
+      "duration": "~13h",
+      "is_direct": true,
       "bike_allowed": true,
       "pet_allowed": false,
       "meal_included": false,
@@ -1052,6 +1153,14 @@
           "lon": 4.3517
         },
         {
+          "lat": 50.9413,
+          "lon": 6.96
+        },
+        {
+          "lat": 52.3759,
+          "lon": 9.732
+        },
+        {
           "lat": 52.52,
           "lon": 13.405
         }
@@ -1060,16 +1169,361 @@
         {
           "city": "Paris Nord",
           "arrival": null,
-          "departure": "18:25"
+          "departure": "21:30"
         },
         {
-          "city": "Bruxelles Midi",
-          "arrival": "20:40",
-          "departure": "20:58"
+          "city": "Bruxelles-Midi",
+          "arrival": "22:50",
+          "departure": "23:10"
         },
         {
           "city": "Berlin Hbf",
-          "arrival": "08:20",
+          "arrival": "09:30",
+          "departure": null
+        }
+      ],
+      "accommodations": [
+        {
+          "type": "seat",
+          "startingPrice": 29
+        },
+        {
+          "type": "couchette",
+          "startingPrice": 59
+        },
+        {
+          "type": "sleeper",
+          "startingPrice": 129
+        }
+      ],
+      "notes": "Lancé le 26 mars 2026. Reprend la ligne suspendue Nightjet Paris-Berlin. Via Bruxelles (non via Strasbourg). Hamburg ajouté comme arrêt à partir du 12 juillet 2026."
+    },
+    {
+      "id": "european-sleeper-brussels-milan",
+      "name": "Bruxelles → Milano",
+      "operator": "European Sleeper",
+      "operator_url": "https://www.europeansleeper.eu",
+      "status": "upcoming",
+      "operating_days": "3x par semaine (prévu)",
+      "duration": "~14h (estimé)",
+      "is_direct": true,
+      "bike_allowed": true,
+      "pet_allowed": false,
+      "meal_included": false,
+      "shower_available": false,
+      "booking_url": "https://www.europeansleeper.eu",
+      "coordinates": [
+        {
+          "lat": 50.8503,
+          "lon": 4.3517
+        },
+        {
+          "lat": 45.4654,
+          "lon": 9.1895
+        }
+      ],
+      "stops": [
+        {
+          "city": "Bruxelles-Midi",
+          "arrival": null,
+          "departure": null
+        },
+        {
+          "city": "Amsterdam",
+          "arrival": null,
+          "departure": null
+        },
+        {
+          "city": "Köln",
+          "arrival": null,
+          "departure": null
+        },
+        {
+          "city": "Zürich",
+          "arrival": null,
+          "departure": null
+        },
+        {
+          "city": "Lugano",
+          "arrival": null,
+          "departure": null
+        },
+        {
+          "city": "Milano",
+          "arrival": null,
+          "departure": null
+        }
+      ],
+      "accommodations": [
+        {
+          "type": "seat",
+          "startingPrice": 29
+        },
+        {
+          "type": "couchette",
+          "startingPrice": 59
+        },
+        {
+          "type": "sleeper",
+          "startingPrice": 129
+        }
+      ],
+      "notes": "Premier départ prévu le 9 septembre 2026. Via Cologne, Zurich, Gotthard, Lugano. Vente billets prévue à partir du 17 mars 2026."
+    },
+    {
+      "id": "european-sleeper-brussels-barcelona",
+      "name": "Bruxelles → Barcelona",
+      "operator": "European Sleeper",
+      "operator_url": "https://www.europeansleeper.eu",
+      "status": "upcoming",
+      "operating_days": "3x par semaine (prévu)",
+      "duration": "~16h (estimé)",
+      "is_direct": false,
+      "bike_allowed": true,
+      "pet_allowed": false,
+      "meal_included": false,
+      "shower_available": false,
+      "booking_url": "https://www.europeansleeper.eu",
+      "coordinates": [
+        {
+          "lat": 50.8503,
+          "lon": 4.3517
+        },
+        {
+          "lat": 41.3851,
+          "lon": 2.1734
+        }
+      ],
+      "stops": [
+        {
+          "city": "Bruxelles-Midi",
+          "arrival": null,
+          "departure": null
+        },
+        {
+          "city": "Barcelona Sants",
+          "arrival": null,
+          "departure": null
+        }
+      ],
+      "accommodations": [
+        {
+          "type": "seat",
+          "startingPrice": 35
+        },
+        {
+          "type": "couchette",
+          "startingPrice": 59
+        }
+      ],
+      "notes": "Prévu pour 2027. Annoncé officiellement par European Sleeper."
+    },
+    {
+      "id": "sj-euronight-stockholm-berlin",
+      "name": "Stockholm → Berlin",
+      "operator": "SJ / RDC Deutschland",
+      "operator_url": "https://www.sj.se",
+      "status": "active",
+      "operating_days": "Quotidien (réduction prévue à ~3-4x/semaine depuis août 2026 sous RDC)",
+      "duration": "~14h",
+      "is_direct": true,
+      "bike_allowed": true,
+      "pet_allowed": false,
+      "meal_included": true,
+      "shower_available": false,
+      "booking_url": "https://www.sj.se",
+      "coordinates": [
+        {
+          "lat": 59.3293,
+          "lon": 18.0686
+        },
+        {
+          "lat": 57.7089,
+          "lon": 11.9746
+        },
+        {
+          "lat": 55.605,
+          "lon": 13.0038
+        },
+        {
+          "lat": 55.6761,
+          "lon": 12.5683
+        },
+        {
+          "lat": 53.5511,
+          "lon": 9.9937
+        },
+        {
+          "lat": 52.52,
+          "lon": 13.405
+        }
+      ],
+      "stops": [
+        {
+          "city": "Stockholm C",
+          "arrival": null,
+          "departure": "18:00"
+        },
+        {
+          "city": "Göteborg",
+          "arrival": "21:15",
+          "departure": "21:30"
+        },
+        {
+          "city": "Malmö",
+          "arrival": "23:00",
+          "departure": "23:20"
+        },
+        {
+          "city": "Kopenhagen",
+          "arrival": "00:05",
+          "departure": "00:20"
+        },
+        {
+          "city": "Hamburg Hbf",
+          "arrival": "06:05",
+          "departure": "06:20"
+        },
+        {
+          "city": "Berlin Hbf",
+          "arrival": "08:30",
+          "departure": null
+        }
+      ],
+      "accommodations": [
+        {
+          "type": "seat",
+          "startingPrice": 45
+        },
+        {
+          "type": "couchette",
+          "startingPrice": 75
+        },
+        {
+          "type": "sleeper",
+          "startingPrice": 149
+        }
+      ],
+      "notes": "Subventions suédoises s'arrêtent mi-2026. RDC Deutschland reprend indépendamment depuis août 2026 avec fréquence réduite."
+    },
+    {
+      "id": "snalltaget-stockholm-berlin",
+      "name": "Stockholm → Berlin",
+      "operator": "Snälltåget",
+      "operator_url": "https://www.snalltaget.se",
+      "status": "active",
+      "operating_days": "200+ jours/an (saisonnier étendu)",
+      "duration": "~14h",
+      "is_direct": true,
+      "bike_allowed": true,
+      "pet_allowed": false,
+      "meal_included": false,
+      "shower_available": false,
+      "booking_url": "https://www.snalltaget.se",
+      "coordinates": [
+        {
+          "lat": 55.605,
+          "lon": 13.0038
+        },
+        {
+          "lat": 55.6761,
+          "lon": 12.5683
+        },
+        {
+          "lat": 53.5511,
+          "lon": 9.9937
+        },
+        {
+          "lat": 52.52,
+          "lon": 13.405
+        }
+      ],
+      "stops": [
+        {
+          "city": "Malmö C",
+          "arrival": null,
+          "departure": "23:15"
+        },
+        {
+          "city": "Kopenhagen",
+          "arrival": "00:10",
+          "departure": "00:30"
+        },
+        {
+          "city": "Hamburg Hbf",
+          "arrival": "05:45",
+          "departure": "06:00"
+        },
+        {
+          "city": "Berlin Hbf",
+          "arrival": "08:35",
+          "departure": null
+        }
+      ],
+      "accommodations": [
+        {
+          "type": "couchette",
+          "startingPrice": 49
+        }
+      ],
+      "notes": "Uniquement couchettes 6 places. Wagon-restaurant 'Krogen'. Certains services depuis Dresden."
+    },
+    {
+      "id": "sbs-basel-copenhagen-malmo",
+      "name": "Basel → Kopenhagen / Malmö",
+      "operator": "SBB",
+      "operator_url": "https://www.sbb.ch",
+      "status": "suspended",
+      "operating_days": "Quotidien (prévu à partir du 15 avril 2026)",
+      "duration": "~12h",
+      "is_direct": true,
+      "bike_allowed": true,
+      "pet_allowed": false,
+      "meal_included": false,
+      "shower_available": false,
+      "booking_url": "https://www.sbb.ch",
+      "coordinates": [
+        {
+          "lat": 47.5596,
+          "lon": 7.5886
+        },
+        {
+          "lat": 50.1109,
+          "lon": 8.6821
+        },
+        {
+          "lat": 53.5511,
+          "lon": 9.9937
+        },
+        {
+          "lat": 55.6761,
+          "lon": 12.5683
+        }
+      ],
+      "stops": [
+        {
+          "city": "Basel SBB",
+          "arrival": null,
+          "departure": "21:00"
+        },
+        {
+          "city": "Frankfurt",
+          "arrival": "23:30",
+          "departure": "23:45"
+        },
+        {
+          "city": "Hamburg",
+          "arrival": "04:00",
+          "departure": "04:20"
+        },
+        {
+          "city": "Kopenhagen",
+          "arrival": "08:30",
+          "departure": "09:00"
+        },
+        {
+          "city": "Malmö",
+          "arrival": "09:30",
           "departure": null
         }
       ],
@@ -1080,39 +1534,49 @@
         },
         {
           "type": "couchette",
-          "startingPrice": 79
+          "startingPrice": 69
         },
         {
           "type": "sleeper",
-          "startingPrice": 149
+          "startingPrice": 119
         }
-      ]
+      ],
+      "notes": "Premier lien direct Suisse-Scandinavie. Lancé le 15 avril 2026. Financé par SBB."
     },
     {
-      "id": "pkp-carpatia",
-      "name": "Przemyśl → Munich",
+      "id": "pkp-euronight-carpatia",
+      "name": "Przemyśl → München",
       "operator": "PKP Intercity",
+      "operator_url": "https://www.intercity.pl",
       "status": "active",
-      "operating_days": "Quotidien (dès déc. 2025)",
-      "duration": "16h00",
-      "is_direct": true,
-      "bike_allowed": true,
+      "operating_days": "Quotidien depuis le 14 décembre 2025",
+      "duration": "~18h",
+      "is_direct": false,
+      "bike_allowed": false,
       "pet_allowed": false,
-      "meal_included": true,
+      "meal_included": false,
       "shower_available": false,
       "booking_url": "https://www.intercity.pl",
       "coordinates": [
         {
-          "lat": 49.7839,
-          "lon": 22.7677
+          "lat": 49.7833,
+          "lon": 22.7667
         },
         {
           "lat": 50.0647,
           "lon": 19.945
         },
         {
-          "lat": 50.0755,
-          "lon": 14.4378
+          "lat": 49.9004,
+          "lon": 18.0022
+        },
+        {
+          "lat": 48.2082,
+          "lon": 16.3738
+        },
+        {
+          "lat": 47.8095,
+          "lon": 13.055
         },
         {
           "lat": 48.1351,
@@ -1123,21 +1587,1392 @@
         {
           "city": "Przemyśl",
           "arrival": null,
-          "departure": "14:30"
+          "departure": "15:40"
         },
         {
-          "city": "Cracovie",
-          "arrival": "17:10",
-          "departure": "17:25"
+          "city": "Kraków",
+          "arrival": "18:10",
+          "departure": "18:25"
         },
         {
-          "city": "Prague",
-          "arrival": "22:45",
-          "departure": "23:05"
+          "city": "Bohumín",
+          "arrival": "22:00",
+          "departure": "22:20"
         },
         {
-          "city": "Munich Hbf",
+          "city": "Wien Hbf",
+          "arrival": "04:30",
+          "departure": "04:50"
+        },
+        {
+          "city": "Salzburg",
+          "arrival": "07:00",
+          "departure": "07:15"
+        },
+        {
+          "city": "München",
+          "arrival": "09:15",
+          "departure": null
+        }
+      ],
+      "accommodations": [
+        {
+          "type": "seat",
+          "startingPrice": 39
+        },
+        {
+          "type": "couchette",
+          "startingPrice": 69
+        },
+        {
+          "type": "sleeper",
+          "startingPrice": 109
+        }
+      ],
+      "notes": "Nouveau Euronight Carpatia lancé en décembre 2025. Traverse 4 pays (PL, CZ, AT, DE). Une partie des voitures va vers Budapest via Bratislava."
+    },
+    {
+      "id": "pkp-euronight-chopin",
+      "name": "Warszawa → Wien / München",
+      "operator": "PKP Intercity / ÖBB",
+      "operator_url": "https://www.intercity.pl",
+      "status": "active",
+      "operating_days": "Quotidien",
+      "duration": "~10h vers Wien",
+      "is_direct": true,
+      "bike_allowed": false,
+      "pet_allowed": false,
+      "meal_included": false,
+      "shower_available": false,
+      "booking_url": "https://www.intercity.pl",
+      "coordinates": [
+        {
+          "lat": 52.2297,
+          "lon": 21.0122
+        },
+        {
+          "lat": 50.2649,
+          "lon": 19.0238
+        },
+        {
+          "lat": 49.9004,
+          "lon": 18.0022
+        },
+        {
+          "lat": 48.2082,
+          "lon": 16.3738
+        }
+      ],
+      "stops": [
+        {
+          "city": "Warszawa Wschodnia",
+          "arrival": null,
+          "departure": "19:41"
+        },
+        {
+          "city": "Katowice",
+          "arrival": "22:00",
+          "departure": "22:15"
+        },
+        {
+          "city": "Ostrava",
+          "arrival": "23:30",
+          "departure": "23:45"
+        },
+        {
+          "city": "Wien Hbf",
+          "arrival": "08:05",
+          "departure": "08:25"
+        },
+        {
+          "city": "Salzburg",
+          "arrival": "10:30",
+          "departure": "10:45"
+        },
+        {
+          "city": "München",
+          "arrival": "12:55",
+          "departure": null
+        }
+      ],
+      "accommodations": [
+        {
+          "type": "seat",
+          "startingPrice": 39
+        },
+        {
+          "type": "couchette",
+          "startingPrice": 69
+        },
+        {
+          "type": "sleeper",
+          "startingPrice": 109
+        }
+      ],
+      "notes": "Le EuroNight Chopin. Connexion à Varsovie vers Vilnius créée depuis 2026."
+    },
+    {
+      "id": "pkp-baltic-express",
+      "name": "Praha → Gdynia (Baltic Express)",
+      "operator": "PKP Intercity / CD",
+      "operator_url": "https://www.intercity.pl",
+      "status": "active",
+      "operating_days": "Permanent depuis décembre 2025 (saisonnier auparavant)",
+      "duration": "~15h",
+      "is_direct": true,
+      "bike_allowed": true,
+      "pet_allowed": false,
+      "meal_included": false,
+      "shower_available": false,
+      "booking_url": "https://www.intercity.pl",
+      "coordinates": [
+        {
+          "lat": 50.0755,
+          "lon": 14.4378
+        },
+        {
+          "lat": 49.9004,
+          "lon": 18.0022
+        },
+        {
+          "lat": 53.1235,
+          "lon": 18.0084
+        },
+        {
+          "lat": 54.5189,
+          "lon": 18.5319
+        }
+      ],
+      "stops": [
+        {
+          "city": "Praha hl.n.",
+          "arrival": null,
+          "departure": "16:30"
+        },
+        {
+          "city": "Bohumín",
+          "arrival": "19:00",
+          "departure": "19:15"
+        },
+        {
+          "city": "Bydgoszcz",
+          "arrival": "00:30",
+          "departure": "00:45"
+        },
+        {
+          "city": "Gdynia",
+          "arrival": "05:00",
+          "departure": null
+        }
+      ],
+      "accommodations": [
+        {
+          "type": "seat",
+          "startingPrice": 35
+        },
+        {
+          "type": "couchette",
+          "startingPrice": 59
+        },
+        {
+          "type": "sleeper",
+          "startingPrice": 99
+        }
+      ],
+      "notes": "Immense succès en 2025. Voiture couchettes permanente depuis décembre 2025. Route modifiée via Bydgoszcz, Toruń, Iława."
+    },
+    {
+      "id": "pkp-adriatic-express",
+      "name": "Warszawa → Rijeka (Adriatic Express)",
+      "operator": "PKP Intercity",
+      "operator_url": "https://www.intercity.pl",
+      "status": "active",
+      "operating_days": "Saisonnier été (juin-août)",
+      "duration": "~20h",
+      "is_direct": false,
+      "bike_allowed": true,
+      "pet_allowed": false,
+      "meal_included": false,
+      "shower_available": false,
+      "booking_url": "https://www.intercity.pl",
+      "coordinates": [
+        {
+          "lat": 52.2297,
+          "lon": 21.0122
+        },
+        {
+          "lat": 50.0647,
+          "lon": 19.945
+        },
+        {
+          "lat": 47.4979,
+          "lon": 19.0402
+        },
+        {
+          "lat": 45.3271,
+          "lon": 14.4422
+        }
+      ],
+      "stops": [
+        {
+          "city": "Warszawa",
+          "arrival": null,
+          "departure": "09:00"
+        },
+        {
+          "city": "Kraków",
+          "arrival": "11:45",
+          "departure": "12:00"
+        },
+        {
+          "city": "Budapest",
+          "arrival": "19:00",
+          "departure": "19:30"
+        },
+        {
+          "city": "Rijeka",
+          "arrival": "06:00",
+          "departure": null
+        }
+      ],
+      "accommodations": [
+        {
+          "type": "seat",
+          "startingPrice": 39
+        },
+        {
+          "type": "couchette",
+          "startingPrice": 69
+        }
+      ],
+      "notes": "Train de vacances Pologne → Côte dalmate croate. Retour prévu pour l'été 2026."
+    },
+    {
+      "id": "intercites-de-nuit-paris-nice",
+      "name": "Paris → Nice",
+      "operator": "SNCF Intercités de Nuit",
+      "operator_url": "https://www.sncf-connect.com",
+      "status": "active",
+      "operating_days": "Quotidien",
+      "duration": "~10h30",
+      "is_direct": true,
+      "bike_allowed": true,
+      "pet_allowed": true,
+      "meal_included": false,
+      "shower_available": false,
+      "booking_url": "https://www.sncf-connect.com",
+      "coordinates": [
+        {
+          "lat": 48.8566,
+          "lon": 2.3522
+        },
+        {
+          "lat": 45.7485,
+          "lon": 4.8467
+        },
+        {
+          "lat": 43.2965,
+          "lon": 5.3698
+        },
+        {
+          "lat": 43.7102,
+          "lon": 7.262
+        }
+      ],
+      "stops": [
+        {
+          "city": "Paris Austerlitz",
+          "arrival": null,
+          "departure": "21:01"
+        },
+        {
+          "city": "Lyon Part-Dieu",
+          "arrival": "00:10",
+          "departure": "00:25"
+        },
+        {
+          "city": "Marseille St-Charles",
+          "arrival": "03:50",
+          "departure": "04:05"
+        },
+        {
+          "city": "Antibes",
+          "arrival": "06:50",
+          "departure": "06:55"
+        },
+        {
+          "city": "Nice Ville",
+          "arrival": "07:14",
+          "departure": null
+        }
+      ],
+      "accommodations": [
+        {
+          "type": "seat",
+          "startingPrice": 19
+        },
+        {
+          "type": "couchette",
+          "startingPrice": 39
+        }
+      ],
+      "notes": "Dernier train de nuit international depuis France supprimé fin 2025. Seules les lignes domestiques restent. Renouvellement du matériel prévu pour 2029."
+    },
+    {
+      "id": "intercites-de-nuit-paris-toulouse",
+      "name": "Paris → Toulouse / Tarbes",
+      "operator": "SNCF Intercités de Nuit",
+      "operator_url": "https://www.sncf-connect.com",
+      "status": "active",
+      "operating_days": "Quotidien",
+      "duration": "~9h",
+      "is_direct": true,
+      "bike_allowed": true,
+      "pet_allowed": true,
+      "meal_included": false,
+      "shower_available": false,
+      "booking_url": "https://www.sncf-connect.com",
+      "coordinates": [
+        {
+          "lat": 48.8566,
+          "lon": 2.3522
+        },
+        {
+          "lat": 45.8336,
+          "lon": 1.2611
+        },
+        {
+          "lat": 45.1593,
+          "lon": 1.532
+        },
+        {
+          "lat": 43.6047,
+          "lon": 1.4442
+        }
+      ],
+      "stops": [
+        {
+          "city": "Paris Austerlitz",
+          "arrival": null,
+          "departure": "21:40"
+        },
+        {
+          "city": "Limoges",
+          "arrival": "01:00",
+          "departure": "01:10"
+        },
+        {
+          "city": "Brive",
+          "arrival": "02:20",
+          "departure": "02:30"
+        },
+        {
+          "city": "Toulouse Matabiau",
+          "arrival": "06:25",
+          "departure": null
+        }
+      ],
+      "accommodations": [
+        {
+          "type": "seat",
+          "startingPrice": 19
+        },
+        {
+          "type": "couchette",
+          "startingPrice": 39
+        }
+      ],
+      "notes": "Le train se sépare en route : une partie va à Toulouse, l'autre à Tarbes via Pau."
+    },
+    {
+      "id": "intercites-de-nuit-paris-bourg-saint-maurice",
+      "name": "Paris → Bourg-Saint-Maurice (Ski train)",
+      "operator": "SNCF Intercités de Nuit",
+      "operator_url": "https://www.sncf-connect.com",
+      "status": "active",
+      "operating_days": "Saisonnier hiver (décembre-mars)",
+      "duration": "~8h",
+      "is_direct": true,
+      "bike_allowed": false,
+      "pet_allowed": false,
+      "meal_included": false,
+      "shower_available": false,
+      "booking_url": "https://www.sncf-connect.com",
+      "coordinates": [
+        {
+          "lat": 48.8566,
+          "lon": 2.3522
+        },
+        {
+          "lat": 45.7485,
+          "lon": 4.8467
+        },
+        {
+          "lat": 45.5646,
+          "lon": 5.9178
+        },
+        {
+          "lat": 45.6167,
+          "lon": 6.7667
+        }
+      ],
+      "stops": [
+        {
+          "city": "Paris Austerlitz",
+          "arrival": null,
+          "departure": "22:20"
+        },
+        {
+          "city": "Chambéry",
+          "arrival": "04:50",
+          "departure": "05:05"
+        },
+        {
+          "city": "Moûtiers",
           "arrival": "06:30",
+          "departure": "06:40"
+        },
+        {
+          "city": "Bourg-Saint-Maurice",
+          "arrival": "07:35",
+          "departure": null
+        }
+      ],
+      "accommodations": [
+        {
+          "type": "seat",
+          "startingPrice": 25
+        },
+        {
+          "type": "couchette",
+          "startingPrice": 49
+        }
+      ],
+      "notes": "Train des neiges. Très populaire l'hiver. Travelski Night Express (Paris→stations ski) également lancé décembre 2025."
+    },
+    {
+      "id": "trenitalia-icn-milan-palermo",
+      "name": "Milano → Palermo / Siracusa",
+      "operator": "Trenitalia Intercity Notte",
+      "operator_url": "https://www.trenitalia.com",
+      "status": "active",
+      "operating_days": "Quotidien",
+      "duration": "~20h",
+      "is_direct": true,
+      "bike_allowed": false,
+      "pet_allowed": false,
+      "meal_included": false,
+      "shower_available": false,
+      "booking_url": "https://www.trenitalia.com",
+      "coordinates": [
+        {
+          "lat": 45.4654,
+          "lon": 9.1895
+        },
+        {
+          "lat": 44.4949,
+          "lon": 11.3426
+        },
+        {
+          "lat": 41.9028,
+          "lon": 12.4964
+        },
+        {
+          "lat": 40.8518,
+          "lon": 14.2681
+        },
+        {
+          "lat": 38.2111,
+          "lon": 15.6367
+        },
+        {
+          "lat": 38.1938,
+          "lon": 15.554
+        },
+        {
+          "lat": 38.1157,
+          "lon": 13.3615
+        }
+      ],
+      "stops": [
+        {
+          "city": "Milano Centrale",
+          "arrival": null,
+          "departure": "20:10"
+        },
+        {
+          "city": "Bologna Centrale",
+          "arrival": "22:05",
+          "departure": "22:20"
+        },
+        {
+          "city": "Roma Termini",
+          "arrival": "02:30",
+          "departure": "02:50"
+        },
+        {
+          "city": "Napoli Centrale",
+          "arrival": "04:45",
+          "departure": "05:05"
+        },
+        {
+          "city": "Villa San Giovanni",
+          "arrival": "09:30",
+          "departure": null
+        },
+        {
+          "city": "Palermo Centrale",
+          "arrival": "13:00",
+          "departure": null
+        }
+      ],
+      "accommodations": [
+        {
+          "type": "seat",
+          "startingPrice": 19
+        },
+        {
+          "type": "couchette",
+          "startingPrice": 39
+        },
+        {
+          "type": "sleeper",
+          "startingPrice": 89
+        }
+      ],
+      "notes": "Traversée détroit de Messine en ferry. Train le plus long d'Europe (unique). Le train se sépare pour Palermo et Siracusa/Catania."
+    },
+    {
+      "id": "trenitalia-icn-rome-palermo",
+      "name": "Roma → Palermo / Siracusa",
+      "operator": "Trenitalia Intercity Notte",
+      "operator_url": "https://www.trenitalia.com",
+      "status": "active",
+      "operating_days": "Quotidien",
+      "duration": "~12h",
+      "is_direct": true,
+      "bike_allowed": false,
+      "pet_allowed": false,
+      "meal_included": false,
+      "shower_available": false,
+      "booking_url": "https://www.trenitalia.com",
+      "coordinates": [
+        {
+          "lat": 41.9028,
+          "lon": 12.4964
+        },
+        {
+          "lat": 40.8518,
+          "lon": 14.2681
+        },
+        {
+          "lat": 38.2111,
+          "lon": 15.6367
+        },
+        {
+          "lat": 38.1938,
+          "lon": 15.554
+        },
+        {
+          "lat": 38.1157,
+          "lon": 13.3615
+        }
+      ],
+      "stops": [
+        {
+          "city": "Roma Termini",
+          "arrival": null,
+          "departure": "20:20"
+        },
+        {
+          "city": "Napoli Centrale",
+          "arrival": "22:15",
+          "departure": "22:35"
+        },
+        {
+          "city": "Villa San Giovanni",
+          "arrival": "02:30",
+          "departure": null
+        },
+        {
+          "city": "Palermo Centrale",
+          "arrival": "06:55",
+          "departure": null
+        }
+      ],
+      "accommodations": [
+        {
+          "type": "seat",
+          "startingPrice": 19
+        },
+        {
+          "type": "couchette",
+          "startingPrice": 39
+        },
+        {
+          "type": "sleeper",
+          "startingPrice": 79
+        }
+      ],
+      "notes": "Traversée détroit de Messine en ferry incluse."
+    },
+    {
+      "id": "trenitalia-icn-rome-lecce",
+      "name": "Roma → Lecce",
+      "operator": "Trenitalia Intercity Notte",
+      "operator_url": "https://www.trenitalia.com",
+      "status": "active",
+      "operating_days": "Quotidien",
+      "duration": "~9h",
+      "is_direct": true,
+      "bike_allowed": false,
+      "pet_allowed": false,
+      "meal_included": false,
+      "shower_available": false,
+      "booking_url": "https://www.trenitalia.com",
+      "coordinates": [
+        {
+          "lat": 41.9028,
+          "lon": 12.4964
+        },
+        {
+          "lat": 41.4632,
+          "lon": 15.5448
+        },
+        {
+          "lat": 41.1177,
+          "lon": 16.8719
+        },
+        {
+          "lat": 40.3516,
+          "lon": 18.175
+        }
+      ],
+      "stops": [
+        {
+          "city": "Roma Termini",
+          "arrival": null,
+          "departure": "23:20"
+        },
+        {
+          "city": "Foggia",
+          "arrival": "03:30",
+          "departure": "03:45"
+        },
+        {
+          "city": "Bari Centrale",
+          "arrival": "05:10",
+          "departure": "05:25"
+        },
+        {
+          "city": "Brindisi",
+          "arrival": "07:00",
+          "departure": "07:10"
+        },
+        {
+          "city": "Lecce",
+          "arrival": "07:45",
+          "departure": null
+        }
+      ],
+      "accommodations": [
+        {
+          "type": "seat",
+          "startingPrice": 19
+        },
+        {
+          "type": "couchette",
+          "startingPrice": 39
+        },
+        {
+          "type": "sleeper",
+          "startingPrice": 79
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "trenitalia-icn-milan-lecce",
+      "name": "Milano → Lecce",
+      "operator": "Trenitalia Intercity Notte",
+      "operator_url": "https://www.trenitalia.com",
+      "status": "active",
+      "operating_days": "Quotidien",
+      "duration": "~12h",
+      "is_direct": true,
+      "bike_allowed": false,
+      "pet_allowed": false,
+      "meal_included": false,
+      "shower_available": false,
+      "booking_url": "https://www.trenitalia.com",
+      "coordinates": [
+        {
+          "lat": 45.4654,
+          "lon": 9.1895
+        },
+        {
+          "lat": 44.4949,
+          "lon": 11.3426
+        },
+        {
+          "lat": 41.1177,
+          "lon": 16.8719
+        },
+        {
+          "lat": 40.3516,
+          "lon": 18.175
+        }
+      ],
+      "stops": [
+        {
+          "city": "Milano Centrale",
+          "arrival": null,
+          "departure": "20:35"
+        },
+        {
+          "city": "Bologna Centrale",
+          "arrival": "22:30",
+          "departure": "22:45"
+        },
+        {
+          "city": "Bari Centrale",
+          "arrival": "05:45",
+          "departure": "06:00"
+        },
+        {
+          "city": "Lecce",
+          "arrival": "08:20",
+          "departure": null
+        }
+      ],
+      "accommodations": [
+        {
+          "type": "seat",
+          "startingPrice": 19
+        },
+        {
+          "type": "couchette",
+          "startingPrice": 39
+        },
+        {
+          "type": "sleeper",
+          "startingPrice": 79
+        }
+      ],
+      "notes": null
+    },
+    {
+      "id": "trenitalia-icn-udine-rome",
+      "name": "Udine → Roma",
+      "operator": "Trenitalia Intercity Notte",
+      "operator_url": "https://www.trenitalia.com",
+      "status": "active",
+      "operating_days": "Quotidien",
+      "duration": "~9h",
+      "is_direct": true,
+      "bike_allowed": false,
+      "pet_allowed": false,
+      "meal_included": false,
+      "shower_available": false,
+      "booking_url": "https://www.trenitalia.com",
+      "coordinates": [
+        {
+          "lat": 46.0716,
+          "lon": 13.2369
+        },
+        {
+          "lat": 45.4408,
+          "lon": 12.3155
+        },
+        {
+          "lat": 44.4949,
+          "lon": 11.3426
+        },
+        {
+          "lat": 43.7714,
+          "lon": 11.2542
+        },
+        {
+          "lat": 41.9028,
+          "lon": 12.4964
+        }
+      ],
+      "stops": [
+        {
+          "city": "Udine",
+          "arrival": null,
+          "departure": "22:40"
+        },
+        {
+          "city": "Venezia Santa Lucia",
+          "arrival": "00:30",
+          "departure": "00:50"
+        },
+        {
+          "city": "Bologna Centrale",
+          "arrival": "03:15",
+          "departure": "03:30"
+        },
+        {
+          "city": "Firenze SMN",
+          "arrival": "04:45",
+          "departure": "05:00"
+        },
+        {
+          "city": "Roma Termini",
+          "arrival": "07:30",
+          "departure": null
+        }
+      ],
+      "accommodations": [
+        {
+          "type": "sleeper",
+          "startingPrice": 89
+        }
+      ],
+      "notes": "Classe 'Superior' (ex-Excelsior). Uniquement sleeper sur cette ligne."
+    },
+    {
+      "id": "caledonian-sleeper-highlander",
+      "name": "London → Inverness / Aberdeen / Fort William",
+      "operator": "Caledonian Sleeper",
+      "operator_url": "https://www.sleeper.scot",
+      "status": "active",
+      "operating_days": "Quotidien (sauf samedi)",
+      "duration": "~12h vers Inverness",
+      "is_direct": true,
+      "bike_allowed": true,
+      "pet_allowed": false,
+      "meal_included": false,
+      "shower_available": true,
+      "booking_url": "https://www.sleeper.scot",
+      "coordinates": [
+        {
+          "lat": 51.5074,
+          "lon": -0.1278
+        },
+        {
+          "lat": 52.4862,
+          "lon": -1.8904
+        },
+        {
+          "lat": 54.9783,
+          "lon": -1.6178
+        },
+        {
+          "lat": 55.9533,
+          "lon": -3.1883
+        },
+        {
+          "lat": 56.3998,
+          "lon": -3.4375
+        },
+        {
+          "lat": 57.4778,
+          "lon": -4.2247
+        }
+      ],
+      "stops": [
+        {
+          "city": "London Euston",
+          "arrival": null,
+          "departure": "21:15"
+        },
+        {
+          "city": "Birmingham International",
+          "arrival": "22:30",
+          "departure": "22:45"
+        },
+        {
+          "city": "Edinburgh",
+          "arrival": "05:30",
+          "departure": "05:50"
+        },
+        {
+          "city": "Perth",
+          "arrival": "07:10",
+          "departure": "07:15"
+        },
+        {
+          "city": "Inverness",
+          "arrival": "09:00",
+          "departure": null
+        }
+      ],
+      "accommodations": [
+        {
+          "type": "seat",
+          "startingPrice": 30
+        },
+        {
+          "type": "sleeper",
+          "startingPrice": 130
+        }
+      ],
+      "notes": "Nouveau stop Birmingham International depuis janvier 2026. Train se sépare pour Aberdeen, Inverness et Fort William. Wi-Fi inclus, kit nuit inclus."
+    },
+    {
+      "id": "caledonian-sleeper-lowlander",
+      "name": "London → Glasgow / Edinburgh",
+      "operator": "Caledonian Sleeper",
+      "operator_url": "https://www.sleeper.scot",
+      "status": "active",
+      "operating_days": "Quotidien (sauf samedi)",
+      "duration": "~9h",
+      "is_direct": true,
+      "bike_allowed": true,
+      "pet_allowed": false,
+      "meal_included": false,
+      "shower_available": true,
+      "booking_url": "https://www.sleeper.scot",
+      "coordinates": [
+        {
+          "lat": 51.5074,
+          "lon": -0.1278
+        },
+        {
+          "lat": 52.4862,
+          "lon": -1.8904
+        },
+        {
+          "lat": 55.9533,
+          "lon": -3.1883
+        },
+        {
+          "lat": 55.8617,
+          "lon": -4.2583
+        }
+      ],
+      "stops": [
+        {
+          "city": "London Euston",
+          "arrival": null,
+          "departure": "23:50"
+        },
+        {
+          "city": "Edinburgh Waverley",
+          "arrival": "07:30",
+          "departure": "07:45"
+        },
+        {
+          "city": "Glasgow Central",
+          "arrival": "08:00",
+          "departure": null
+        }
+      ],
+      "accommodations": [
+        {
+          "type": "seat",
+          "startingPrice": 30
+        },
+        {
+          "type": "sleeper",
+          "startingPrice": 130
+        }
+      ],
+      "notes": "Wi-Fi inclus. Chambres Caledonian Double en-suite disponibles."
+    },
+    {
+      "id": "trenitalia-espresso-rome-marseille",
+      "name": "Roma → Marseille (Espresso Riviera)",
+      "operator": "FS Treni Turistici Italiani",
+      "operator_url": "https://www.trenitalia.com",
+      "status": "active",
+      "operating_days": "Saisonnier été (juillet-août)",
+      "duration": "~13h",
+      "is_direct": true,
+      "bike_allowed": false,
+      "pet_allowed": false,
+      "meal_included": false,
+      "shower_available": false,
+      "booking_url": "https://www.trenitalia.com",
+      "coordinates": [
+        {
+          "lat": 41.9028,
+          "lon": 12.4964
+        },
+        {
+          "lat": 44.4087,
+          "lon": 8.9327
+        },
+        {
+          "lat": 43.785,
+          "lon": 7.7715
+        },
+        {
+          "lat": 43.7102,
+          "lon": 7.262
+        },
+        {
+          "lat": 43.2965,
+          "lon": 5.3698
+        }
+      ],
+      "stops": [
+        {
+          "city": "Roma Termini",
+          "arrival": null,
+          "departure": "20:00"
+        },
+        {
+          "city": "Genova Piazza Principe",
+          "arrival": "01:00",
+          "departure": "01:15"
+        },
+        {
+          "city": "Ventimiglia",
+          "arrival": "03:45",
+          "departure": "04:00"
+        },
+        {
+          "city": "Nice Ville",
+          "arrival": "04:50",
+          "departure": "05:00"
+        },
+        {
+          "city": "Marseille St-Charles",
+          "arrival": "07:30",
+          "departure": null
+        }
+      ],
+      "accommodations": [
+        {
+          "type": "seat",
+          "startingPrice": 29
+        },
+        {
+          "type": "couchette",
+          "startingPrice": 59
+        }
+      ],
+      "notes": "Lancé en 2024. Côte Ligure + Côte d'Azur + Provence. Très touristique."
+    },
+    {
+      "id": "trenitalia-espresso-monaco",
+      "name": "Roma → München (Espresso Monaco / Oktoberfest)",
+      "operator": "FS Treni Turistici Italiani",
+      "operator_url": "https://www.trenitalia.com",
+      "status": "active",
+      "operating_days": "Saisonnier (Oktoberfest + marchés Noël)",
+      "duration": "~14h",
+      "is_direct": false,
+      "bike_allowed": false,
+      "pet_allowed": false,
+      "meal_included": false,
+      "shower_available": false,
+      "booking_url": "https://www.trenitalia.com",
+      "coordinates": [
+        {
+          "lat": 41.9028,
+          "lon": 12.4964
+        },
+        {
+          "lat": 44.4949,
+          "lon": 11.3426
+        },
+        {
+          "lat": 45.4398,
+          "lon": 10.9924
+        },
+        {
+          "lat": 47.0016,
+          "lon": 11.5049
+        },
+        {
+          "lat": 47.2692,
+          "lon": 11.4041
+        },
+        {
+          "lat": 48.1351,
+          "lon": 11.582
+        }
+      ],
+      "stops": [
+        {
+          "city": "Roma Termini",
+          "arrival": null,
+          "departure": "19:00"
+        },
+        {
+          "city": "Bologna",
+          "arrival": "22:00",
+          "departure": "22:20"
+        },
+        {
+          "city": "Verona",
+          "arrival": "00:15",
+          "departure": "00:30"
+        },
+        {
+          "city": "Brennero/Brenner",
+          "arrival": "03:00",
+          "departure": "03:15"
+        },
+        {
+          "city": "Innsbruck",
+          "arrival": "04:00",
+          "departure": "04:15"
+        },
+        {
+          "city": "München Hbf",
+          "arrival": "07:30",
+          "departure": null
+        }
+      ],
+      "accommodations": [
+        {
+          "type": "seat",
+          "startingPrice": 39
+        },
+        {
+          "type": "couchette",
+          "startingPrice": 69
+        }
+      ],
+      "notes": "Liaison permanente Rome-Munich annoncée en collaboration avec DB et ÖBB pour 2026."
+    },
+    {
+      "id": "renfe-trenhotel-madrid-barcelona-suspended",
+      "name": "Madrid → Paris (Trenhotel)",
+      "operator": "Renfe",
+      "operator_url": "https://www.renfe.com",
+      "status": "suspended",
+      "operating_days": "Suspendu",
+      "duration": "~13h (historique)",
+      "is_direct": true,
+      "bike_allowed": false,
+      "pet_allowed": false,
+      "meal_included": true,
+      "shower_available": true,
+      "booking_url": "https://www.renfe.com",
+      "coordinates": [
+        {
+          "lat": 40.4168,
+          "lon": -3.7038
+        },
+        {
+          "lat": 41.6488,
+          "lon": -0.8891
+        },
+        {
+          "lat": 41.3851,
+          "lon": 2.1734
+        },
+        {
+          "lat": 42.421,
+          "lon": 3.1577
+        },
+        {
+          "lat": 43.8342,
+          "lon": 4.3601
+        },
+        {
+          "lat": 48.8566,
+          "lon": 2.3522
+        }
+      ],
+      "stops": [
+        {
+          "city": "Madrid Chamartín",
+          "arrival": null,
+          "departure": "19:00"
+        },
+        {
+          "city": "Zaragoza",
+          "arrival": "21:30",
+          "departure": "21:45"
+        },
+        {
+          "city": "Barcelona Sants",
+          "arrival": "00:30",
+          "departure": "01:00"
+        },
+        {
+          "city": "Paris Austerlitz",
+          "arrival": "09:00",
+          "departure": null
+        }
+      ],
+      "accommodations": [
+        {
+          "type": "seat",
+          "startingPrice": 50
+        },
+        {
+          "type": "couchette",
+          "startingPrice": 80
+        },
+        {
+          "type": "sleeper",
+          "startingPrice": 150
+        },
+        {
+          "type": "suite",
+          "startingPrice": 280
+        }
+      ],
+      "notes": "Suspendu depuis plusieurs années en raison de la concurrence du TGV Paris-Barcelona. Renfe maintient quelques Trenhotels domestiques (Madrid-Lisboa, Madrid-A Coruña, etc.)."
+    },
+    {
+      "id": "renfe-trenhotel-madrid-lisbon",
+      "name": "Madrid → Lisboa",
+      "operator": "Renfe / CP",
+      "operator_url": "https://www.renfe.com",
+      "status": "suspended",
+      "operating_days": "Suspendu depuis 2020",
+      "duration": "~11h (historique)",
+      "is_direct": true,
+      "bike_allowed": false,
+      "pet_allowed": false,
+      "meal_included": true,
+      "shower_available": true,
+      "booking_url": "https://www.renfe.com",
+      "coordinates": [
+        {
+          "lat": 40.4168,
+          "lon": -3.7038
+        },
+        {
+          "lat": 39.5696,
+          "lon": -6.4669
+        },
+        {
+          "lat": 38.7169,
+          "lon": -9.1399
+        }
+      ],
+      "stops": [
+        {
+          "city": "Madrid Chamartín",
+          "arrival": null,
+          "departure": "22:00"
+        },
+        {
+          "city": "Lisboa Santa Apolónia",
+          "arrival": "09:00",
+          "departure": null
+        }
+      ],
+      "accommodations": [
+        {
+          "type": "sleeper",
+          "startingPrice": 120
+        },
+        {
+          "type": "suite",
+          "startingPrice": 250
+        }
+      ],
+      "notes": "Suspendu depuis Covid-2020. Relance annoncée mais toujours reportée. Serait le seul lien ferroviaire nocturne entre Péninsule ibérique et reste d'Europe."
+    },
+    {
+      "id": "travelski-night-express-paris-ski",
+      "name": "Paris → Stations de ski alpines",
+      "operator": "Travelski Night Express",
+      "operator_url": "https://www.travelski.com",
+      "status": "active",
+      "operating_days": "Saisonnier hiver (19 déc 2025 - 20 mars 2026)",
+      "duration": "~8h",
+      "is_direct": true,
+      "bike_allowed": false,
+      "pet_allowed": false,
+      "meal_included": false,
+      "shower_available": false,
+      "booking_url": "https://www.travelski.com",
+      "coordinates": [
+        {
+          "lat": 48.8566,
+          "lon": 2.3522
+        },
+        {
+          "lat": 45.6333,
+          "lon": 6.9
+        }
+      ],
+      "stops": [
+        {
+          "city": "Paris Gare de Lyon",
+          "arrival": null,
+          "departure": "22:00"
+        },
+        {
+          "city": "Bourg-Saint-Maurice",
+          "arrival": "06:30",
+          "departure": null
+        }
+      ],
+      "accommodations": [
+        {
+          "type": "seat",
+          "startingPrice": 49
+        },
+        {
+          "type": "couchette",
+          "startingPrice": 99
+        }
+      ],
+      "notes": "Package tout inclus disponible : transferts, hébergement, forfait ski. Lancé en décembre 2025."
+    },
+    {
+      "id": "sj-vy-night-train-sweden",
+      "name": "Stockholm / Göteborg → Sundsvall / Östersund / Åre",
+      "operator": "SJ / VY",
+      "operator_url": "https://www.sj.se",
+      "status": "active",
+      "operating_days": "Quotidien",
+      "duration": "~8h",
+      "is_direct": true,
+      "bike_allowed": true,
+      "pet_allowed": true,
+      "meal_included": false,
+      "shower_available": false,
+      "booking_url": "https://www.sj.se",
+      "coordinates": [
+        {
+          "lat": 59.3293,
+          "lon": 18.0686
+        },
+        {
+          "lat": 60.6749,
+          "lon": 17.1415
+        },
+        {
+          "lat": 62.3913,
+          "lon": 17.3069
+        },
+        {
+          "lat": 63.1792,
+          "lon": 14.6357
+        },
+        {
+          "lat": 63.3258,
+          "lon": 14.5121
+        }
+      ],
+      "stops": [
+        {
+          "city": "Stockholm C",
+          "arrival": null,
+          "departure": "22:00"
+        },
+        {
+          "city": "Uppsala",
+          "arrival": "22:45",
+          "departure": "22:55"
+        },
+        {
+          "city": "Sundsvall",
+          "arrival": "03:15",
+          "departure": "03:30"
+        },
+        {
+          "city": "Östersund",
+          "arrival": "07:00",
+          "departure": "07:10"
+        },
+        {
+          "city": "Åre",
+          "arrival": "09:00",
           "departure": null
         }
       ],
@@ -1152,68 +2987,2275 @@
         },
         {
           "type": "sleeper",
-          "startingPrice": 119
+          "startingPrice": 120
         }
-      ]
+      ],
+      "notes": "Ligne domestique suédoise. Arrêt à Luleå supprimé depuis avril 2026 (train s'arrête à Umeå)."
     },
     {
-      "id": "sbb-basel-copenhagen",
-      "name": "Basel → Copenhague",
-      "operator": "SBB",
-      "status": "upcoming",
-      "operating_days": "Prévu avril 2026",
-      "duration": "13h00",
+      "id": "euronight-zurich-budapest",
+      "name": "Zürich → Budapest",
+      "operator": "ÖBB / MÁV / CD",
+      "operator_url": "https://www.nightjet.com",
+      "status": "active",
+      "operating_days": "Quotidien",
+      "duration": "~14h",
+      "is_direct": true,
+      "bike_allowed": false,
+      "pet_allowed": false,
+      "meal_included": false,
+      "shower_available": false,
+      "booking_url": "https://www.nightjet.com",
+      "coordinates": [
+        {
+          "lat": 47.3769,
+          "lon": 8.5417
+        },
+        {
+          "lat": 47.2692,
+          "lon": 11.4041
+        },
+        {
+          "lat": 48.2082,
+          "lon": 16.3738
+        },
+        {
+          "lat": 47.4979,
+          "lon": 19.0402
+        }
+      ],
+      "stops": [
+        {
+          "city": "Zürich HB",
+          "arrival": null,
+          "departure": "23:05"
+        },
+        {
+          "city": "Innsbruck",
+          "arrival": "02:40",
+          "departure": "02:55"
+        },
+        {
+          "city": "Wien Hbf",
+          "arrival": "07:40",
+          "departure": "08:05"
+        },
+        {
+          "city": "Budapest Keleti",
+          "arrival": "11:00",
+          "departure": null
+        }
+      ],
+      "accommodations": [
+        {
+          "type": "seat",
+          "startingPrice": 39
+        },
+        {
+          "type": "couchette",
+          "startingPrice": 74
+        },
+        {
+          "type": "sleeper",
+          "startingPrice": 139
+        }
+      ],
+      "notes": "Passe par Salzbourg et Linz."
+    },
+    {
+      "id": "cd-euronight-prague-vienna",
+      "name": "Praha → Przemyśl (via Wien)",
+      "operator": "CD / PKP",
+      "operator_url": "https://www.cd.cz",
+      "status": "active",
+      "operating_days": "Quotidien depuis le 14 décembre 2025",
+      "duration": "~12h",
+      "is_direct": false,
+      "bike_allowed": false,
+      "pet_allowed": false,
+      "meal_included": false,
+      "shower_available": false,
+      "booking_url": "https://www.cd.cz",
+      "coordinates": [
+        {
+          "lat": 50.0755,
+          "lon": 14.4378
+        },
+        {
+          "lat": 49.5938,
+          "lon": 17.2509
+        },
+        {
+          "lat": 50.0647,
+          "lon": 19.945
+        },
+        {
+          "lat": 49.7833,
+          "lon": 22.7667
+        }
+      ],
+      "stops": [
+        {
+          "city": "Praha hl.n.",
+          "arrival": null,
+          "departure": "20:00"
+        },
+        {
+          "city": "Olomouc",
+          "arrival": "22:30",
+          "departure": "22:45"
+        },
+        {
+          "city": "Przemyśl",
+          "arrival": "09:00",
+          "departure": null
+        }
+      ],
+      "accommodations": [
+        {
+          "type": "seat",
+          "startingPrice": 29
+        },
+        {
+          "type": "couchette",
+          "startingPrice": 59
+        }
+      ],
+      "notes": "Nouveau service CD lancé décembre 2025. Lien Europe centrale → Ukraine."
+    },
+    {
+      "id": "vy-nattog-oslo-bergen",
+      "name": "Oslo → Bergen",
+      "operator": "Vy",
+      "operator_url": "https://www.vy.no",
+      "status": "active",
+      "operating_days": "Quotidien",
+      "duration": "~7h",
+      "is_direct": true,
+      "bike_allowed": true,
+      "pet_allowed": true,
+      "meal_included": false,
+      "shower_available": false,
+      "booking_url": "https://www.vy.no",
+      "coordinates": [
+        {
+          "lat": 59.9139,
+          "lon": 10.7522
+        },
+        {
+          "lat": 60.1282,
+          "lon": 10.2129
+        },
+        {
+          "lat": 60.631,
+          "lon": 9.6607
+        },
+        {
+          "lat": 60.5938,
+          "lon": 6.8038
+        },
+        {
+          "lat": 60.3913,
+          "lon": 5.3221
+        }
+      ],
+      "stops": [
+        {
+          "city": "Oslo S",
+          "arrival": null,
+          "departure": "23:05"
+        },
+        {
+          "city": "Voss",
+          "arrival": "05:35",
+          "departure": "05:38"
+        },
+        {
+          "city": "Bergen",
+          "arrival": "06:47",
+          "departure": null
+        }
+      ],
+      "accommodations": [
+        {
+          "type": "seat",
+          "startingPrice": 19
+        },
+        {
+          "type": "couchette",
+          "startingPrice": 59
+        }
+      ],
+      "notes": "Bergensbanen. Traversée de la montagne norvégienne. Parmi les trains de nuit les plus spectaculaires d'Europe."
+    },
+    {
+      "id": "vy-nattog-oslo-trondheim",
+      "name": "Oslo → Trondheim",
+      "operator": "Vy",
+      "operator_url": "https://www.vy.no",
+      "status": "active",
+      "operating_days": "Quotidien",
+      "duration": "~7h",
+      "is_direct": true,
+      "bike_allowed": true,
+      "pet_allowed": true,
+      "meal_included": false,
+      "shower_available": false,
+      "booking_url": "https://www.vy.no",
+      "coordinates": [
+        {
+          "lat": 59.9139,
+          "lon": 10.7522
+        },
+        {
+          "lat": 60.7945,
+          "lon": 10.6931
+        },
+        {
+          "lat": 62.0705,
+          "lon": 9.2892
+        },
+        {
+          "lat": 63.4305,
+          "lon": 10.3951
+        }
+      ],
+      "stops": [
+        {
+          "city": "Oslo S",
+          "arrival": null,
+          "departure": "23:15"
+        },
+        {
+          "city": "Lillehammer",
+          "arrival": "01:40",
+          "departure": "01:43"
+        },
+        {
+          "city": "Dombås",
+          "arrival": "03:30",
+          "departure": "03:33"
+        },
+        {
+          "city": "Trondheim S",
+          "arrival": "06:40",
+          "departure": null
+        }
+      ],
+      "accommodations": [
+        {
+          "type": "seat",
+          "startingPrice": 19
+        },
+        {
+          "type": "couchette",
+          "startingPrice": 59
+        }
+      ],
+      "notes": "Dovrebanen. Traverse les hauts plateaux de Dovre. Prolongeable jusqu'à Bodø."
+    },
+    {
+      "id": "vy-nattog-trondheim-bodo",
+      "name": "Trondheim → Bodø",
+      "operator": "Vy",
+      "operator_url": "https://www.vy.no",
+      "status": "active",
+      "operating_days": "Quotidien",
+      "duration": "~10h",
+      "is_direct": true,
+      "bike_allowed": true,
+      "pet_allowed": true,
+      "meal_included": false,
+      "shower_available": false,
+      "booking_url": "https://www.vy.no",
+      "coordinates": [
+        {
+          "lat": 63.4305,
+          "lon": 10.3951
+        },
+        {
+          "lat": 64.0112,
+          "lon": 11.4953
+        },
+        {
+          "lat": 65.8333,
+          "lon": 13.1833
+        },
+        {
+          "lat": 66.3136,
+          "lon": 14.1456
+        },
+        {
+          "lat": 67.2803,
+          "lon": 14.405
+        }
+      ],
+      "stops": [
+        {
+          "city": "Trondheim S",
+          "arrival": null,
+          "departure": "23:05"
+        },
+        {
+          "city": "Steinkjer",
+          "arrival": "01:05",
+          "departure": "01:08"
+        },
+        {
+          "city": "Mosjøen",
+          "arrival": "05:30",
+          "departure": "05:33"
+        },
+        {
+          "city": "Mo i Rana",
+          "arrival": "07:15",
+          "departure": "07:18"
+        },
+        {
+          "city": "Bodø",
+          "arrival": "09:55",
+          "departure": null
+        }
+      ],
+      "accommodations": [
+        {
+          "type": "seat",
+          "startingPrice": 19
+        },
+        {
+          "type": "couchette",
+          "startingPrice": 59
+        }
+      ],
+      "notes": "Nordlandsbanen. Traverse le cercle arctique. L'un des rares trains de nuit atteignant l'Arctique."
+    },
+    {
+      "id": "nightjet-dusseldorf-vienna",
+      "name": "Düsseldorf → Wien",
+      "operator": "ÖBB Nightjet",
+      "operator_url": "https://www.nightjet.com",
+      "status": "active",
+      "operating_days": "Quotidien",
+      "duration": "~12h",
+      "is_direct": true,
+      "bike_allowed": true,
+      "pet_allowed": true,
+      "meal_included": true,
+      "shower_available": true,
+      "booking_url": "https://www.nightjet.com",
+      "coordinates": [
+        {
+          "lat": 51.2217,
+          "lon": 6.7762
+        },
+        {
+          "lat": 50.9413,
+          "lon": 6.96
+        },
+        {
+          "lat": 50.3569,
+          "lon": 7.589
+        },
+        {
+          "lat": 50.1109,
+          "lon": 8.6821
+        },
+        {
+          "lat": 49.4521,
+          "lon": 11.0767
+        },
+        {
+          "lat": 48.5732,
+          "lon": 13.4516
+        },
+        {
+          "lat": 48.3069,
+          "lon": 14.2858
+        },
+        {
+          "lat": 48.2082,
+          "lon": 16.3738
+        }
+      ],
+      "stops": [
+        {
+          "city": "Düsseldorf Hbf",
+          "arrival": null,
+          "departure": "20:20"
+        },
+        {
+          "city": "Köln Hbf",
+          "arrival": "20:53",
+          "departure": "21:10"
+        },
+        {
+          "city": "Koblenz",
+          "arrival": "21:57",
+          "departure": "22:00"
+        },
+        {
+          "city": "Frankfurt Hbf",
+          "arrival": "23:05",
+          "departure": "23:20"
+        },
+        {
+          "city": "Nürnberg",
+          "arrival": "01:45",
+          "departure": "01:55"
+        },
+        {
+          "city": "Passau",
+          "arrival": "04:30",
+          "departure": "04:40"
+        },
+        {
+          "city": "Linz",
+          "arrival": "06:05",
+          "departure": "06:15"
+        },
+        {
+          "city": "Wien Hbf",
+          "arrival": "07:50",
+          "departure": null
+        }
+      ],
+      "accommodations": [
+        {
+          "type": "seat",
+          "startingPrice": 29
+        },
+        {
+          "type": "couchette",
+          "startingPrice": 59
+        },
+        {
+          "type": "sleeper",
+          "startingPrice": 109
+        },
+        {
+          "type": "mini_cabin",
+          "startingPrice": 79
+        }
+      ],
+      "notes": "Nightjet nouvelle génération. Via la vallée du Rhin."
+    },
+    {
+      "id": "intercites-de-nuit-paris-hendaye",
+      "name": "Paris → Hendaye",
+      "operator": "SNCF Intercités de Nuit",
+      "operator_url": "https://www.sncf-connect.com",
+      "status": "active",
+      "operating_days": "Quotidien",
+      "duration": "~9h",
+      "is_direct": true,
+      "bike_allowed": true,
+      "pet_allowed": true,
+      "meal_included": false,
+      "shower_available": false,
+      "booking_url": "https://www.sncf-connect.com",
+      "coordinates": [
+        {
+          "lat": 48.8566,
+          "lon": 2.3522
+        },
+        {
+          "lat": 44.8378,
+          "lon": -0.5792
+        },
+        {
+          "lat": 43.4929,
+          "lon": -1.4748
+        },
+        {
+          "lat": 43.3561,
+          "lon": -1.776
+        }
+      ],
+      "stops": [
+        {
+          "city": "Paris Austerlitz",
+          "arrival": null,
+          "departure": "22:03"
+        },
+        {
+          "city": "Bordeaux St-Jean",
+          "arrival": "02:09",
+          "departure": "02:18"
+        },
+        {
+          "city": "Bayonne",
+          "arrival": "04:52",
+          "departure": "04:58"
+        },
+        {
+          "city": "Biarritz",
+          "arrival": "05:11",
+          "departure": "05:14"
+        },
+        {
+          "city": "St-Jean-de-Luz",
+          "arrival": "05:28",
+          "departure": "05:31"
+        },
+        {
+          "city": "Hendaye",
+          "arrival": "05:52",
+          "departure": null
+        }
+      ],
+      "accommodations": [
+        {
+          "type": "seat",
+          "startingPrice": 19
+        },
+        {
+          "type": "couchette",
+          "startingPrice": 39
+        }
+      ],
+      "notes": "Liaison Paris–Pays basque. Terminus à Hendaye, frontière espagnole (correspondance vers Irun/San Sebastián). Train se scinde parfois pour Tarbes via Pau."
+    },
+    {
+      "id": "night-riviera-london-penzance",
+      "name": "London → Penzance",
+      "operator": "Great Western Railway",
+      "operator_url": "https://www.gwr.com/night-riviera",
+      "status": "active",
+      "operating_days": "Lundi–Samedi",
+      "duration": "~5h30",
       "is_direct": true,
       "bike_allowed": true,
       "pet_allowed": false,
+      "meal_included": false,
+      "shower_available": false,
+      "booking_url": "https://www.gwr.com/night-riviera",
+      "coordinates": [
+        {
+          "lat": 51.5154,
+          "lon": -0.1755
+        },
+        {
+          "lat": 51.4043,
+          "lon": -3.1562
+        },
+        {
+          "lat": 50.3782,
+          "lon": -4.1427
+        },
+        {
+          "lat": 50.1203,
+          "lon": -5.537
+        }
+      ],
+      "stops": [
+        {
+          "city": "London Paddington",
+          "arrival": null,
+          "departure": "23:45"
+        },
+        {
+          "city": "Bristol Temple Meads",
+          "arrival": "01:21",
+          "departure": "01:30"
+        },
+        {
+          "city": "Plymouth",
+          "arrival": "04:00",
+          "departure": "04:10"
+        },
+        {
+          "city": "St Erth",
+          "arrival": "05:16",
+          "departure": "05:20"
+        },
+        {
+          "city": "Penzance",
+          "arrival": "05:32",
+          "departure": null
+        }
+      ],
+      "accommodations": [
+        {
+          "type": "seat",
+          "startingPrice": 28
+        },
+        {
+          "type": "sleeper",
+          "startingPrice": 59
+        }
+      ],
+      "notes": "Le seul train de nuit en Angleterre avec des couchettes (sleeper pods). Traverse la Cornouaille. Fonctionne depuis 1983."
+    },
+    {
+      "id": "renfe-trenhotel-madrid-acoruna",
+      "name": "Madrid → A Coruña / Ferrol",
+      "operator": "Renfe Trenhotel",
+      "operator_url": "https://www.renfe.com",
+      "status": "active",
+      "operating_days": "Quotidien",
+      "duration": "~9h",
+      "is_direct": true,
+      "bike_allowed": false,
+      "pet_allowed": false,
       "meal_included": true,
       "shower_available": true,
-      "booking_url": "https://www.sbb.ch",
+      "booking_url": "https://www.renfe.com",
       "coordinates": [
+        {
+          "lat": 40.4168,
+          "lon": -3.7038
+        },
+        {
+          "lat": 41.5034,
+          "lon": -5.7468
+        },
+        {
+          "lat": 42.3349,
+          "lon": -7.8636
+        },
+        {
+          "lat": 43.3623,
+          "lon": -8.4115
+        }
+      ],
+      "stops": [
+        {
+          "city": "Madrid Chamartín",
+          "arrival": null,
+          "departure": "21:45"
+        },
+        {
+          "city": "Zamora",
+          "arrival": "23:30",
+          "departure": "23:40"
+        },
+        {
+          "city": "Ourense",
+          "arrival": "03:20",
+          "departure": "03:35"
+        },
+        {
+          "city": "Santiago de Compostela",
+          "arrival": "05:15",
+          "departure": "05:25"
+        },
+        {
+          "city": "A Coruña",
+          "arrival": "06:45",
+          "departure": null
+        }
+      ],
+      "accommodations": [
+        {
+          "type": "seat",
+          "startingPrice": 29
+        },
+        {
+          "type": "couchette",
+          "startingPrice": 55
+        },
+        {
+          "type": "sleeper",
+          "startingPrice": 110
+        }
+      ],
+      "notes": "Seul lien nocturne direct Madrid–Galice. Le train se scinde pour Ferrol (arrivée ~09:00). Passe par le col de la Cisa."
+    },
+    {
+      "id": "renfe-trenhotel-madrid-vigo",
+      "name": "Madrid → Vigo",
+      "operator": "Renfe Trenhotel",
+      "operator_url": "https://www.renfe.com",
+      "status": "active",
+      "operating_days": "Quotidien",
+      "duration": "~10h",
+      "is_direct": true,
+      "bike_allowed": false,
+      "pet_allowed": false,
+      "meal_included": true,
+      "shower_available": true,
+      "booking_url": "https://www.renfe.com",
+      "coordinates": [
+        {
+          "lat": 40.4168,
+          "lon": -3.7038
+        },
+        {
+          "lat": 41.5034,
+          "lon": -5.7468
+        },
+        {
+          "lat": 42.3349,
+          "lon": -7.8636
+        },
+        {
+          "lat": 42.2328,
+          "lon": -8.7226
+        }
+      ],
+      "stops": [
+        {
+          "city": "Madrid Chamartín",
+          "arrival": null,
+          "departure": "21:45"
+        },
+        {
+          "city": "Zamora",
+          "arrival": "23:30",
+          "departure": "23:40"
+        },
+        {
+          "city": "Ourense",
+          "arrival": "03:20",
+          "departure": "03:50"
+        },
+        {
+          "city": "Pontevedra",
+          "arrival": "06:00",
+          "departure": "06:10"
+        },
+        {
+          "city": "Vigo Guixar",
+          "arrival": "06:40",
+          "departure": null
+        }
+      ],
+      "accommodations": [
+        {
+          "type": "seat",
+          "startingPrice": 29
+        },
+        {
+          "type": "couchette",
+          "startingPrice": 55
+        },
+        {
+          "type": "sleeper",
+          "startingPrice": 110
+        }
+      ],
+      "notes": "Même train que Madrid–A Coruña jusqu'à Ourense, puis bifurcation vers Vigo et la côte Rias Baixas."
+    },
+    {
+      "id": "nightjet-munich-rome",
+      "name": "München → Rome",
+      "operator": "ÖBB Nightjet",
+      "operator_url": "https://www.nightjet.com",
+      "status": "active",
+      "operating_days": "Quotidien",
+      "duration": "~11h",
+      "is_direct": true,
+      "bike_allowed": true,
+      "pet_allowed": true,
+      "meal_included": true,
+      "shower_available": true,
+      "booking_url": "https://www.nightjet.com",
+      "coordinates": [
+        {
+          "lat": 48.1351,
+          "lon": 11.582
+        },
+        {
+          "lat": 47.5786,
+          "lon": 12.1664
+        },
+        {
+          "lat": 47.2692,
+          "lon": 11.4041
+        },
+        {
+          "lat": 47.0016,
+          "lon": 11.5049
+        },
+        {
+          "lat": 46.4983,
+          "lon": 11.3548
+        },
+        {
+          "lat": 45.4384,
+          "lon": 10.9916
+        },
+        {
+          "lat": 44.4949,
+          "lon": 11.3426
+        },
+        {
+          "lat": 43.7696,
+          "lon": 11.2558
+        },
+        {
+          "lat": 41.9028,
+          "lon": 12.4964
+        }
+      ],
+      "stops": [
+        {
+          "city": "München Hbf",
+          "arrival": null,
+          "departure": "20:28"
+        },
+        {
+          "city": "Kufstein",
+          "arrival": "21:40",
+          "departure": "21:43"
+        },
+        {
+          "city": "Innsbruck",
+          "arrival": "22:31",
+          "departure": "22:45"
+        },
+        {
+          "city": "Brennero",
+          "arrival": "23:40",
+          "departure": "23:45"
+        },
+        {
+          "city": "Bolzano",
+          "arrival": "01:02",
+          "departure": "01:07"
+        },
+        {
+          "city": "Verona",
+          "arrival": "02:28",
+          "departure": "02:35"
+        },
+        {
+          "city": "Bologna",
+          "arrival": "03:55",
+          "departure": "04:05"
+        },
+        {
+          "city": "Firenze",
+          "arrival": "05:10",
+          "departure": "05:20"
+        },
+        {
+          "city": "Roma Termini",
+          "arrival": "07:45",
+          "departure": null
+        }
+      ],
+      "accommodations": [
+        {
+          "type": "seat",
+          "startingPrice": 29
+        },
+        {
+          "type": "couchette",
+          "startingPrice": 59
+        },
+        {
+          "type": "sleeper",
+          "startingPrice": 109
+        },
+        {
+          "type": "mini_cabin",
+          "startingPrice": 79
+        }
+      ],
+      "notes": "Via le col du Brenner. Nouvelle génération Nightjet depuis 2024. Le train Vienne–Rome se divise/joint à Bolzano."
+    },
+    {
+      "id": "nightjet-berlin-zurich",
+      "name": "Berlin → Zürich",
+      "operator": "ÖBB Nightjet",
+      "operator_url": "https://www.nightjet.com",
+      "status": "active",
+      "operating_days": "Quotidien",
+      "duration": "~11h",
+      "is_direct": true,
+      "bike_allowed": true,
+      "pet_allowed": true,
+      "meal_included": true,
+      "shower_available": true,
+      "booking_url": "https://www.nightjet.com",
+      "coordinates": [
+        {
+          "lat": 52.52,
+          "lon": 13.405
+        },
+        {
+          "lat": 51.4825,
+          "lon": 11.9675
+        },
+        {
+          "lat": 50.9987,
+          "lon": 11.0278
+        },
+        {
+          "lat": 50.1109,
+          "lon": 8.6821
+        },
+        {
+          "lat": 47.999,
+          "lon": 7.8421
+        },
         {
           "lat": 47.5596,
           "lon": 7.5886
         },
         {
-          "lat": 53.5753,
-          "lon": 10.0153
-        },
-        {
-          "lat": 55.6761,
-          "lon": 12.5683
+          "lat": 47.3769,
+          "lon": 8.5417
         }
       ],
       "stops": [
         {
-          "city": "Basel SBB",
+          "city": "Berlin Hbf",
           "arrival": null,
-          "departure": "19:30"
+          "departure": "21:55"
         },
         {
-          "city": "Hamburg Hbf",
-          "arrival": "02:15",
-          "departure": "02:30"
+          "city": "Halle",
+          "arrival": "23:34",
+          "departure": "23:40"
         },
         {
-          "city": "Copenhague H",
+          "city": "Erfurt",
+          "arrival": "00:31",
+          "departure": "00:38"
+        },
+        {
+          "city": "Frankfurt Hbf",
+          "arrival": "02:40",
+          "departure": "02:55"
+        },
+        {
+          "city": "Freiburg im Breisgau",
+          "arrival": "05:15",
+          "departure": "05:22"
+        },
+        {
+          "city": "Basel SBB",
+          "arrival": "06:21",
+          "departure": "06:35"
+        },
+        {
+          "city": "Zürich HB",
+          "arrival": "07:40",
+          "departure": null
+        }
+      ],
+      "accommodations": [
+        {
+          "type": "seat",
+          "startingPrice": 29
+        },
+        {
+          "type": "couchette",
+          "startingPrice": 59
+        },
+        {
+          "type": "sleeper",
+          "startingPrice": 109
+        },
+        {
+          "type": "mini_cabin",
+          "startingPrice": 79
+        }
+      ],
+      "notes": "NJ 408/409. Via la vallée du Rhin. Lien direct entre la capitale allemande et la Suisse sans correspondance."
+    },
+    {
+      "id": "nightjet-euronight-vienna-split",
+      "name": "Wien → Split",
+      "operator": "ÖBB / HŽ Cargo",
+      "operator_url": "https://www.nightjet.com",
+      "status": "active",
+      "operating_days": "Jeudi–Dimanche (saisonnier été)",
+      "duration": "~14h",
+      "is_direct": true,
+      "bike_allowed": false,
+      "pet_allowed": true,
+      "meal_included": false,
+      "shower_available": false,
+      "booking_url": "https://www.nightjet.com",
+      "coordinates": [
+        {
+          "lat": 48.2082,
+          "lon": 16.3738
+        },
+        {
+          "lat": 47.0707,
+          "lon": 15.4395
+        },
+        {
+          "lat": 46.5547,
+          "lon": 15.6467
+        },
+        {
+          "lat": 45.815,
+          "lon": 15.9819
+        },
+        {
+          "lat": 44.0418,
+          "lon": 16.1981
+        },
+        {
+          "lat": 43.5081,
+          "lon": 16.4402
+        }
+      ],
+      "stops": [
+        {
+          "city": "Wien Hbf",
+          "arrival": null,
+          "departure": "20:10"
+        },
+        {
+          "city": "Graz Hbf",
+          "arrival": "22:15",
+          "departure": "22:30"
+        },
+        {
+          "city": "Maribor",
+          "arrival": "00:10",
+          "departure": "00:25"
+        },
+        {
+          "city": "Zagreb Gl.",
+          "arrival": "02:30",
+          "departure": "02:50"
+        },
+        {
+          "city": "Knin",
+          "arrival": "07:40",
+          "departure": "07:50"
+        },
+        {
+          "city": "Split",
+          "arrival": "10:05",
+          "departure": null
+        }
+      ],
+      "accommodations": [
+        {
+          "type": "seat",
+          "startingPrice": 29
+        },
+        {
+          "type": "couchette",
+          "startingPrice": 55
+        }
+      ],
+      "notes": "EuroNight saisonnier Vienne–Split. Fonctionne de mi-juin à mi-septembre. Dessert la côte dalmate."
+    },
+    {
+      "id": "mav-euronight-budapest-split",
+      "name": "Budapest → Split",
+      "operator": "MÁV-START",
+      "operator_url": "https://www.mavcsoport.hu",
+      "status": "active",
+      "operating_days": "Vendredi–Dimanche (saisonnier été)",
+      "duration": "~13h",
+      "is_direct": true,
+      "bike_allowed": false,
+      "pet_allowed": true,
+      "meal_included": false,
+      "shower_available": false,
+      "booking_url": "https://www.mavcsoport.hu",
+      "coordinates": [
+        {
+          "lat": 47.4979,
+          "lon": 19.0402
+        },
+        {
+          "lat": 47.1931,
+          "lon": 18.4099
+        },
+        {
+          "lat": 46.3594,
+          "lon": 17.0347
+        },
+        {
+          "lat": 45.815,
+          "lon": 15.9819
+        },
+        {
+          "lat": 44.0418,
+          "lon": 16.1981
+        },
+        {
+          "lat": 43.5081,
+          "lon": 16.4402
+        }
+      ],
+      "stops": [
+        {
+          "city": "Budapest Keleti",
+          "arrival": null,
+          "departure": "19:55"
+        },
+        {
+          "city": "Székesfehérvár",
+          "arrival": "21:00",
+          "departure": "21:05"
+        },
+        {
+          "city": "Gyékényes",
+          "arrival": "23:40",
+          "departure": "23:55"
+        },
+        {
+          "city": "Zagreb Gl.",
+          "arrival": "01:30",
+          "departure": "01:50"
+        },
+        {
+          "city": "Knin",
+          "arrival": "06:30",
+          "departure": "06:40"
+        },
+        {
+          "city": "Split",
+          "arrival": "08:55",
+          "departure": null
+        }
+      ],
+      "accommodations": [
+        {
+          "type": "seat",
+          "startingPrice": 25
+        },
+        {
+          "type": "couchette",
+          "startingPrice": 49
+        }
+      ],
+      "notes": "\"Adria\". EuroNight saisonnier Budapest–Split via le lac Balaton. Fonctionne de fin mai à fin septembre."
+    },
+    {
+      "id": "trenitalia-icn-milan-syracuse",
+      "name": "Milano → Siracusa",
+      "operator": "Trenitalia",
+      "operator_url": "https://www.trenitalia.com",
+      "status": "active",
+      "operating_days": "Quotidien",
+      "duration": "~14h30",
+      "is_direct": false,
+      "bike_allowed": false,
+      "pet_allowed": true,
+      "meal_included": false,
+      "shower_available": false,
+      "booking_url": "https://www.trenitalia.com",
+      "coordinates": [
+        {
+          "lat": 45.4654,
+          "lon": 9.1859
+        },
+        {
+          "lat": 44.4949,
+          "lon": 11.3426
+        },
+        {
+          "lat": 43.7696,
+          "lon": 11.2558
+        },
+        {
+          "lat": 41.9028,
+          "lon": 12.4964
+        },
+        {
+          "lat": 40.8518,
+          "lon": 14.2681
+        },
+        {
+          "lat": 38.2111,
+          "lon": 15.6367
+        },
+        {
+          "lat": 38.1938,
+          "lon": 15.554
+        },
+        {
+          "lat": 37.5079,
+          "lon": 15.083
+        },
+        {
+          "lat": 37.0755,
+          "lon": 15.2866
+        }
+      ],
+      "stops": [
+        {
+          "city": "Milano Centrale",
+          "arrival": null,
+          "departure": "20:10"
+        },
+        {
+          "city": "Bologna Centrale",
+          "arrival": "21:55",
+          "departure": "22:05"
+        },
+        {
+          "city": "Firenze SMN",
+          "arrival": "23:15",
+          "departure": "23:25"
+        },
+        {
+          "city": "Roma Termini",
+          "arrival": "01:40",
+          "departure": "02:00"
+        },
+        {
+          "city": "Napoli Centrale",
+          "arrival": "03:30",
+          "departure": "03:45"
+        },
+        {
+          "city": "Villa San Giovanni",
+          "arrival": "07:00",
+          "departure": "07:30"
+        },
+        {
+          "city": "Messina Centrale",
+          "arrival": "08:05",
+          "departure": "08:20"
+        },
+        {
+          "city": "Catania Centrale",
+          "arrival": "10:00",
+          "departure": "10:15"
+        },
+        {
+          "city": "Siracusa",
+          "arrival": "11:05",
+          "departure": null
+        }
+      ],
+      "accommodations": [
+        {
+          "type": "seat",
+          "startingPrice": 19
+        },
+        {
+          "type": "couchette",
+          "startingPrice": 39
+        }
+      ],
+      "notes": "ICN. Le train embarque sur le ferry de Messine à Villa San Giovanni. Relie le nord de l'Italie à l'est de la Sicile."
+    },
+    {
+      "id": "trenitalia-icn-rome-syracuse",
+      "name": "Roma → Siracusa",
+      "operator": "Trenitalia",
+      "operator_url": "https://www.trenitalia.com",
+      "status": "active",
+      "operating_days": "Quotidien",
+      "duration": "~11h",
+      "is_direct": false,
+      "bike_allowed": false,
+      "pet_allowed": true,
+      "meal_included": false,
+      "shower_available": false,
+      "booking_url": "https://www.trenitalia.com",
+      "coordinates": [
+        {
+          "lat": 41.9028,
+          "lon": 12.4964
+        },
+        {
+          "lat": 40.8518,
+          "lon": 14.2681
+        },
+        {
+          "lat": 40.6824,
+          "lon": 14.7681
+        },
+        {
+          "lat": 38.2111,
+          "lon": 15.6367
+        },
+        {
+          "lat": 38.1938,
+          "lon": 15.554
+        },
+        {
+          "lat": 37.5079,
+          "lon": 15.083
+        },
+        {
+          "lat": 37.0755,
+          "lon": 15.2866
+        }
+      ],
+      "stops": [
+        {
+          "city": "Roma Termini",
+          "arrival": null,
+          "departure": "20:50"
+        },
+        {
+          "city": "Napoli Centrale",
+          "arrival": "22:20",
+          "departure": "22:35"
+        },
+        {
+          "city": "Salerno",
+          "arrival": "23:05",
+          "departure": "23:15"
+        },
+        {
+          "city": "Villa San Giovanni",
+          "arrival": "03:40",
+          "departure": "04:10"
+        },
+        {
+          "city": "Messina Centrale",
+          "arrival": "04:45",
+          "departure": "05:00"
+        },
+        {
+          "city": "Catania Centrale",
+          "arrival": "06:45",
+          "departure": "07:00"
+        },
+        {
+          "city": "Siracusa",
+          "arrival": "07:50",
+          "departure": null
+        }
+      ],
+      "accommodations": [
+        {
+          "type": "seat",
+          "startingPrice": 19
+        },
+        {
+          "type": "couchette",
+          "startingPrice": 39
+        }
+      ],
+      "notes": "ICN. Via Napoli et Salerne. Traverse le détroit de Messine en ferry avec le train à bord."
+    },
+    {
+      "id": "trenitalia-icn-turin-lecce",
+      "name": "Torino → Lecce",
+      "operator": "Trenitalia",
+      "operator_url": "https://www.trenitalia.com",
+      "status": "active",
+      "operating_days": "Quotidien",
+      "duration": "~15h",
+      "is_direct": true,
+      "bike_allowed": false,
+      "pet_allowed": true,
+      "meal_included": false,
+      "shower_available": false,
+      "booking_url": "https://www.trenitalia.com",
+      "coordinates": [
+        {
+          "lat": 45.0703,
+          "lon": 7.6869
+        },
+        {
+          "lat": 45.4654,
+          "lon": 9.1859
+        },
+        {
+          "lat": 44.4949,
+          "lon": 11.3426
+        },
+        {
+          "lat": 44.0594,
+          "lon": 12.5683
+        },
+        {
+          "lat": 43.6158,
+          "lon": 13.5189
+        },
+        {
+          "lat": 42.3541,
+          "lon": 14.1753
+        },
+        {
+          "lat": 41.1177,
+          "lon": 16.8719
+        },
+        {
+          "lat": 40.3564,
+          "lon": 18.1747
+        }
+      ],
+      "stops": [
+        {
+          "city": "Torino Porta Nuova",
+          "arrival": null,
+          "departure": "18:55"
+        },
+        {
+          "city": "Milano Centrale",
+          "arrival": "20:00",
+          "departure": "20:20"
+        },
+        {
+          "city": "Bologna Centrale",
+          "arrival": "21:55",
+          "departure": "22:10"
+        },
+        {
+          "city": "Rimini",
+          "arrival": "23:10",
+          "departure": "23:20"
+        },
+        {
+          "city": "Ancona",
+          "arrival": "00:30",
+          "departure": "00:40"
+        },
+        {
+          "city": "Pescara",
+          "arrival": "02:00",
+          "departure": "02:10"
+        },
+        {
+          "city": "Bari Centrale",
+          "arrival": "06:30",
+          "departure": "06:45"
+        },
+        {
+          "city": "Lecce",
+          "arrival": "08:25",
+          "departure": null
+        }
+      ],
+      "accommodations": [
+        {
+          "type": "seat",
+          "startingPrice": 19
+        },
+        {
+          "type": "couchette",
+          "startingPrice": 39
+        }
+      ],
+      "notes": "ICN. Longe la côte Adriatique de Rimini à Bari. Relie le nord-ouest de l'Italie aux Pouilles."
+    },
+    {
+      "id": "trenitalia-icn-turin-reggio-calabria",
+      "name": "Torino → Reggio di Calabria",
+      "operator": "Trenitalia",
+      "operator_url": "https://www.trenitalia.com",
+      "status": "active",
+      "operating_days": "Quotidien",
+      "duration": "~16h",
+      "is_direct": false,
+      "bike_allowed": false,
+      "pet_allowed": true,
+      "meal_included": false,
+      "shower_available": false,
+      "booking_url": "https://www.trenitalia.com",
+      "coordinates": [
+        {
+          "lat": 45.0703,
+          "lon": 7.6869
+        },
+        {
+          "lat": 45.4654,
+          "lon": 9.1859
+        },
+        {
+          "lat": 44.4949,
+          "lon": 11.3426
+        },
+        {
+          "lat": 43.7696,
+          "lon": 11.2558
+        },
+        {
+          "lat": 41.9028,
+          "lon": 12.4964
+        },
+        {
+          "lat": 40.8518,
+          "lon": 14.2681
+        },
+        {
+          "lat": 38.2111,
+          "lon": 15.6367
+        },
+        {
+          "lat": 38.1112,
+          "lon": 15.647
+        }
+      ],
+      "stops": [
+        {
+          "city": "Torino Porta Nuova",
+          "arrival": null,
+          "departure": "17:50"
+        },
+        {
+          "city": "Milano Centrale",
+          "arrival": "18:55",
+          "departure": "19:15"
+        },
+        {
+          "city": "Bologna Centrale",
+          "arrival": "21:00",
+          "departure": "21:15"
+        },
+        {
+          "city": "Firenze SMN",
+          "arrival": "22:30",
+          "departure": "22:45"
+        },
+        {
+          "city": "Roma Termini",
+          "arrival": "01:10",
+          "departure": "01:30"
+        },
+        {
+          "city": "Napoli Centrale",
+          "arrival": "03:00",
+          "departure": "03:15"
+        },
+        {
+          "city": "Villa San Giovanni",
+          "arrival": "06:40",
+          "departure": "07:10"
+        },
+        {
+          "city": "Reggio di Calabria Centrale",
+          "arrival": "07:30",
+          "departure": null
+        }
+      ],
+      "accommodations": [
+        {
+          "type": "seat",
+          "startingPrice": 19
+        },
+        {
+          "type": "couchette",
+          "startingPrice": 39
+        }
+      ],
+      "notes": "ICN. Traverse toute la péninsule italienne du nord au sud. Le train prend le ferry à Villa San Giovanni."
+    },
+    {
+      "id": "trenitalia-icn-rome-bolzano",
+      "name": "Roma → Bolzano",
+      "operator": "Trenitalia",
+      "operator_url": "https://www.trenitalia.com",
+      "status": "active",
+      "operating_days": "Vendredi–Samedi",
+      "duration": "~9h",
+      "is_direct": true,
+      "bike_allowed": false,
+      "pet_allowed": true,
+      "meal_included": false,
+      "shower_available": false,
+      "booking_url": "https://www.trenitalia.com",
+      "coordinates": [
+        {
+          "lat": 41.9028,
+          "lon": 12.4964
+        },
+        {
+          "lat": 43.7696,
+          "lon": 11.2558
+        },
+        {
+          "lat": 44.4949,
+          "lon": 11.3426
+        },
+        {
+          "lat": 45.4384,
+          "lon": 10.9916
+        },
+        {
+          "lat": 46.0748,
+          "lon": 11.1217
+        },
+        {
+          "lat": 46.4983,
+          "lon": 11.3548
+        }
+      ],
+      "stops": [
+        {
+          "city": "Roma Termini",
+          "arrival": null,
+          "departure": "21:55"
+        },
+        {
+          "city": "Firenze SMN",
+          "arrival": "23:55",
+          "departure": "00:10"
+        },
+        {
+          "city": "Bologna Centrale",
+          "arrival": "01:15",
+          "departure": "01:25"
+        },
+        {
+          "city": "Verona Porta Nuova",
+          "arrival": "02:45",
+          "departure": "02:55"
+        },
+        {
+          "city": "Trento",
+          "arrival": "04:10",
+          "departure": "04:20"
+        },
+        {
+          "city": "Bolzano",
+          "arrival": "05:00",
+          "departure": null
+        }
+      ],
+      "accommodations": [
+        {
+          "type": "seat",
+          "startingPrice": 19
+        },
+        {
+          "type": "couchette",
+          "startingPrice": 39
+        }
+      ],
+      "notes": "ICN saisonnier. Service principalement actif les week-ends d'hiver pour les skieurs se rendant dans le Tyrol du Sud."
+    },
+    {
+      "id": "trenitalia-icn-rome-venice-trieste",
+      "name": "Roma → Venezia → Trieste",
+      "operator": "Trenitalia",
+      "operator_url": "https://www.trenitalia.com",
+      "status": "active",
+      "operating_days": "Quotidien",
+      "duration": "~9h",
+      "is_direct": true,
+      "bike_allowed": false,
+      "pet_allowed": true,
+      "meal_included": false,
+      "shower_available": false,
+      "booking_url": "https://www.trenitalia.com",
+      "coordinates": [
+        {
+          "lat": 41.9028,
+          "lon": 12.4964
+        },
+        {
+          "lat": 43.7696,
+          "lon": 11.2558
+        },
+        {
+          "lat": 44.4949,
+          "lon": 11.3426
+        },
+        {
+          "lat": 45.4064,
+          "lon": 11.8768
+        },
+        {
+          "lat": 45.4408,
+          "lon": 12.3155
+        },
+        {
+          "lat": 45.6495,
+          "lon": 13.7768
+        }
+      ],
+      "stops": [
+        {
+          "city": "Roma Termini",
+          "arrival": null,
+          "departure": "22:45"
+        },
+        {
+          "city": "Firenze SMN",
+          "arrival": "00:40",
+          "departure": "00:55"
+        },
+        {
+          "city": "Bologna Centrale",
+          "arrival": "01:55",
+          "departure": "02:05"
+        },
+        {
+          "city": "Padova",
+          "arrival": "03:35",
+          "departure": "03:45"
+        },
+        {
+          "city": "Venezia Santa Lucia",
+          "arrival": "04:05",
+          "departure": "04:20"
+        },
+        {
+          "city": "Trieste Centrale",
+          "arrival": "06:25",
+          "departure": null
+        }
+      ],
+      "accommodations": [
+        {
+          "type": "seat",
+          "startingPrice": 19
+        },
+        {
+          "type": "couchette",
+          "startingPrice": 39
+        }
+      ],
+      "notes": "ICN. Relie Rome à la Vénétie et à Trieste. Passage par Venise vers 4h du matin — une expérience unique."
+    },
+    {
+      "id": "go-ahead-norge-oslo-stavanger",
+      "name": "Oslo → Stavanger",
+      "operator": "Go-Ahead Norge",
+      "operator_url": "https://www.go-aheadnordic.no",
+      "status": "active",
+      "operating_days": "Lundi–Samedi",
+      "duration": "~8h",
+      "is_direct": true,
+      "bike_allowed": true,
+      "pet_allowed": true,
+      "meal_included": false,
+      "shower_available": false,
+      "booking_url": "https://www.go-aheadnordic.no",
+      "coordinates": [
+        {
+          "lat": 59.9139,
+          "lon": 10.7522
+        },
+        {
+          "lat": 58.1467,
+          "lon": 8.0059
+        },
+        {
+          "lat": 58.97,
+          "lon": 5.7331
+        }
+      ],
+      "stops": [
+        {
+          "city": "Oslo S",
+          "arrival": null,
+          "departure": "23:05"
+        },
+        {
+          "city": "Kristiansand",
+          "arrival": "03:05",
+          "departure": "03:10"
+        },
+        {
+          "city": "Egersund",
+          "arrival": "05:30",
+          "departure": "05:35"
+        },
+        {
+          "city": "Stavanger",
+          "arrival": "07:05",
+          "departure": null
+        }
+      ],
+      "accommodations": [
+        {
+          "type": "seat",
+          "startingPrice": 15
+        }
+      ],
+      "notes": "Sørlandsbanen. Seul service nocturne sur la ligne côtière du Sørlandet. Opéré par Go-Ahead Norge depuis 2019."
+    },
+    {
+      "id": "renfe-trenhotel-barcelona-vigo",
+      "name": "Barcelona → Vigo",
+      "operator": "Renfe Trenhotel",
+      "operator_url": "https://www.renfe.com",
+      "status": "active",
+      "operating_days": "Quotidien",
+      "duration": "~13h",
+      "is_direct": true,
+      "bike_allowed": false,
+      "pet_allowed": false,
+      "meal_included": true,
+      "shower_available": true,
+      "booking_url": "https://www.renfe.com",
+      "coordinates": [
+        {
+          "lat": 41.3851,
+          "lon": 2.1734
+        },
+        {
+          "lat": 41.6488,
+          "lon": -0.8891
+        },
+        {
+          "lat": 42.4627,
+          "lon": -2.4449
+        },
+        {
+          "lat": 42.344,
+          "lon": -3.6969
+        },
+        {
+          "lat": 42.5987,
+          "lon": -5.5671
+        },
+        {
+          "lat": 42.3349,
+          "lon": -7.8636
+        },
+        {
+          "lat": 42.2328,
+          "lon": -8.7226
+        }
+      ],
+      "stops": [
+        {
+          "city": "Barcelona Sants",
+          "arrival": null,
+          "departure": "19:45"
+        },
+        {
+          "city": "Zaragoza Delicias",
+          "arrival": "21:40",
+          "departure": "21:55"
+        },
+        {
+          "city": "Logroño",
+          "arrival": "23:05",
+          "departure": "23:15"
+        },
+        {
+          "city": "Burgos",
+          "arrival": "00:30",
+          "departure": "00:45"
+        },
+        {
+          "city": "León",
+          "arrival": "03:00",
+          "departure": "03:20"
+        },
+        {
+          "city": "Ourense",
+          "arrival": "06:15",
+          "departure": "06:30"
+        },
+        {
+          "city": "Vigo Guixar",
+          "arrival": "08:40",
+          "departure": null
+        }
+      ],
+      "accommodations": [
+        {
+          "type": "seat",
+          "startingPrice": 29
+        },
+        {
+          "type": "couchette",
+          "startingPrice": 55
+        },
+        {
+          "type": "sleeper",
+          "startingPrice": 110
+        }
+      ],
+      "notes": "\"Trenhotel Galicia\". Relie la Catalogne à la Galice en longeant le nord de l'Espagne sans passer par Madrid."
+    },
+    {
+      "id": "renfe-trenhotel-barcelona-acoruna",
+      "name": "Barcelona → A Coruña",
+      "operator": "Renfe Trenhotel",
+      "operator_url": "https://www.renfe.com",
+      "status": "active",
+      "operating_days": "Quotidien",
+      "duration": "~13h30",
+      "is_direct": true,
+      "bike_allowed": false,
+      "pet_allowed": false,
+      "meal_included": true,
+      "shower_available": true,
+      "booking_url": "https://www.renfe.com",
+      "coordinates": [
+        {
+          "lat": 41.3851,
+          "lon": 2.1734
+        },
+        {
+          "lat": 41.6488,
+          "lon": -0.8891
+        },
+        {
+          "lat": 42.4627,
+          "lon": -2.4449
+        },
+        {
+          "lat": 42.344,
+          "lon": -3.6969
+        },
+        {
+          "lat": 42.5987,
+          "lon": -5.5671
+        },
+        {
+          "lat": 42.8782,
+          "lon": -8.5448
+        },
+        {
+          "lat": 43.3623,
+          "lon": -8.4115
+        }
+      ],
+      "stops": [
+        {
+          "city": "Barcelona Sants",
+          "arrival": null,
+          "departure": "19:45"
+        },
+        {
+          "city": "Zaragoza Delicias",
+          "arrival": "21:40",
+          "departure": "21:55"
+        },
+        {
+          "city": "Logroño",
+          "arrival": "23:05",
+          "departure": "23:15"
+        },
+        {
+          "city": "Burgos",
+          "arrival": "00:30",
+          "departure": "00:45"
+        },
+        {
+          "city": "León",
+          "arrival": "03:00",
+          "departure": "03:20"
+        },
+        {
+          "city": "Santiago de Compostela",
+          "arrival": "07:15",
+          "departure": "07:25"
+        },
+        {
+          "city": "A Coruña",
           "arrival": "08:30",
           "departure": null
         }
       ],
       "accommodations": [
         {
+          "type": "seat",
+          "startingPrice": 29
+        },
+        {
           "type": "couchette",
-          "startingPrice": 69
+          "startingPrice": 55
         },
         {
           "type": "sleeper",
-          "startingPrice": 129
+          "startingPrice": 110
+        }
+      ],
+      "notes": "\"Trenhotel Rosalía de Castro\". Même train que Barcelone–Vigo jusqu'à Ourense ou León, puis bifurcation vers A Coruña."
+    },
+    {
+      "id": "renfe-trenhotel-irun-lisbon",
+      "name": "Irún → Porto → Lisboa",
+      "operator": "Renfe / CP",
+      "operator_url": "https://www.renfe.com",
+      "status": "active",
+      "operating_days": "Quotidien",
+      "duration": "~13h",
+      "is_direct": true,
+      "bike_allowed": false,
+      "pet_allowed": false,
+      "meal_included": true,
+      "shower_available": true,
+      "booking_url": "https://www.renfe.com",
+      "coordinates": [
+        {
+          "lat": 43.3385,
+          "lon": -1.793
         },
         {
-          "type": "suite",
-          "startingPrice": 229
+          "lat": 42.8467,
+          "lon": -2.6726
+        },
+        {
+          "lat": 42.344,
+          "lon": -3.6969
+        },
+        {
+          "lat": 41.6523,
+          "lon": -4.7245
+        },
+        {
+          "lat": 40.9701,
+          "lon": -5.6635
+        },
+        {
+          "lat": 40.6073,
+          "lon": -6.8344
+        },
+        {
+          "lat": 40.2056,
+          "lon": -8.4194
+        },
+        {
+          "lat": 41.1579,
+          "lon": -8.6291
+        },
+        {
+          "lat": 38.7169,
+          "lon": -9.1395
         }
-      ]
+      ],
+      "stops": [
+        {
+          "city": "Irún",
+          "arrival": null,
+          "departure": "19:00"
+        },
+        {
+          "city": "Vitoria-Gasteiz",
+          "arrival": "20:05",
+          "departure": "20:15"
+        },
+        {
+          "city": "Burgos",
+          "arrival": "21:30",
+          "departure": "21:45"
+        },
+        {
+          "city": "Valladolid",
+          "arrival": "23:00",
+          "departure": "23:15"
+        },
+        {
+          "city": "Salamanca",
+          "arrival": "00:45",
+          "departure": "01:00"
+        },
+        {
+          "city": "Vilar Formoso",
+          "arrival": "02:30",
+          "departure": "02:50"
+        },
+        {
+          "city": "Coimbra",
+          "arrival": "05:10",
+          "departure": "05:20"
+        },
+        {
+          "city": "Porto Campanhã",
+          "arrival": "06:45",
+          "departure": "07:00"
+        },
+        {
+          "city": "Lisboa Oriente",
+          "arrival": "10:05",
+          "departure": null
+        }
+      ],
+      "accommodations": [
+        {
+          "type": "seat",
+          "startingPrice": 29
+        },
+        {
+          "type": "couchette",
+          "startingPrice": 55
+        },
+        {
+          "type": "sleeper",
+          "startingPrice": 115
+        }
+      ],
+      "notes": "\"Trenhotel Surexpreso\". Lien nocturne Pays basque–Portugal. Passe la frontière hispano-portugaise de nuit à Vilar Formoso."
+    },
+    {
+      "id": "snalltaget-malmo-austria",
+      "name": "Malmö → Österreich (ski)",
+      "operator": "Snälltåget",
+      "operator_url": "https://www.snalltaget.se",
+      "status": "active",
+      "operating_days": "1–2x par semaine (saisonnier hiver)",
+      "duration": "~18h",
+      "is_direct": true,
+      "bike_allowed": false,
+      "pet_allowed": false,
+      "meal_included": false,
+      "shower_available": false,
+      "booking_url": "https://www.snalltaget.se",
+      "coordinates": [
+        {
+          "lat": 59.3293,
+          "lon": 18.0686
+        },
+        {
+          "lat": 55.605,
+          "lon": 13.0038
+        },
+        {
+          "lat": 55.6761,
+          "lon": 12.5683
+        },
+        {
+          "lat": 53.5511,
+          "lon": 9.9937
+        },
+        {
+          "lat": 48.1351,
+          "lon": 11.582
+        },
+        {
+          "lat": 47.2692,
+          "lon": 11.4041
+        },
+        {
+          "lat": 47.4167,
+          "lon": 13.2167
+        }
+      ],
+      "stops": [
+        {
+          "city": "Stockholm C",
+          "arrival": null,
+          "departure": "17:00"
+        },
+        {
+          "city": "Malmö C",
+          "arrival": "22:00",
+          "departure": "22:30"
+        },
+        {
+          "city": "Copenhague H",
+          "arrival": "23:05",
+          "departure": "23:25"
+        },
+        {
+          "city": "Hamburg Hbf",
+          "arrival": "03:00",
+          "departure": "03:30"
+        },
+        {
+          "city": "München Hbf",
+          "arrival": "09:00",
+          "departure": "09:20"
+        },
+        {
+          "city": "Innsbruck Hbf",
+          "arrival": "10:50",
+          "departure": "11:05"
+        },
+        {
+          "city": "Bischofshofen",
+          "arrival": "13:00",
+          "departure": null
+        }
+      ],
+      "accommodations": [
+        {
+          "type": "seat",
+          "startingPrice": 35
+        },
+        {
+          "type": "couchette",
+          "startingPrice": 79
+        }
+      ],
+      "notes": "Train de ski saisonnier (décembre–mars). Relie la Scandinavie aux stations de ski autrichiennes. Peut aussi partir de Stockholm."
+    },
+    {
+      "id": "european-sleeper-amsterdam-milan",
+      "name": "Amsterdam → Milano",
+      "operator": "European Sleeper",
+      "operator_url": "https://www.europeansleeper.eu",
+      "status": "upcoming",
+      "operating_days": "3x par semaine (dès sept. 2026)",
+      "duration": "~14h",
+      "is_direct": true,
+      "bike_allowed": true,
+      "pet_allowed": false,
+      "meal_included": true,
+      "shower_available": true,
+      "booking_url": "https://www.europeansleeper.eu",
+      "coordinates": [
+        {
+          "lat": 52.3792,
+          "lon": 4.9
+        },
+        {
+          "lat": 50.8503,
+          "lon": 4.3517
+        },
+        {
+          "lat": 50.9413,
+          "lon": 6.96
+        },
+        {
+          "lat": 47.5596,
+          "lon": 7.5886
+        },
+        {
+          "lat": 47.3769,
+          "lon": 8.5417
+        },
+        {
+          "lat": 46.0037,
+          "lon": 8.9511
+        },
+        {
+          "lat": 45.4654,
+          "lon": 9.1859
+        }
+      ],
+      "stops": [
+        {
+          "city": "Amsterdam Centraal",
+          "arrival": null,
+          "departure": "18:00"
+        },
+        {
+          "city": "Bruxelles Midi",
+          "arrival": "20:30",
+          "departure": "20:50"
+        },
+        {
+          "city": "Köln Hbf",
+          "arrival": "22:20",
+          "departure": "22:40"
+        },
+        {
+          "city": "Basel SBB",
+          "arrival": "02:00",
+          "departure": "02:20"
+        },
+        {
+          "city": "Zürich HB",
+          "arrival": "03:15",
+          "departure": "03:35"
+        },
+        {
+          "city": "Lugano",
+          "arrival": "06:00",
+          "departure": "06:10"
+        },
+        {
+          "city": "Milano Centrale",
+          "arrival": "07:45",
+          "departure": null
+        }
+      ],
+      "accommodations": [
+        {
+          "type": "seat",
+          "startingPrice": 49
+        },
+        {
+          "type": "couchette",
+          "startingPrice": 89
+        },
+        {
+          "type": "sleeper",
+          "startingPrice": 149
+        }
+      ],
+      "notes": "Lancement prévu septembre 2026. Via le tunnel du Gothard. European Sleeper relie pour la première fois directement Amsterdam à Milan."
     }
   ]
 }
