@@ -6,7 +6,7 @@
       "id": "nj-paris-berlin",
       "name": "Paris → Berlin",
       "operator": "Nightjet / SNCF",
-      "status": "active",
+      "status": "suspended",
       "operating_days": "Quotidien",
       "duration": "13h15",
       "bike_allowed": true,
@@ -83,7 +83,7 @@
       "id": "nj-paris-vienna",
       "name": "Paris → Vienne",
       "operator": "Nightjet / SNCF",
-      "status": "active",
+      "status": "suspended",
       "operating_days": "Quotidien",
       "duration": "11h56",
       "bike_allowed": true,
@@ -1028,6 +1028,192 @@
         }
       ],
       "is_direct": true
+    },
+    {
+      "id": "es-paris-berlin",
+      "name": "Paris → Berlin",
+      "operator": "European Sleeper",
+      "status": "active",
+      "operating_days": "Mar, Jeu, Sam (dès 26 mars 2026)",
+      "duration": "14h00",
+      "is_direct": false,
+      "bike_allowed": true,
+      "pet_allowed": false,
+      "meal_included": false,
+      "shower_available": false,
+      "booking_url": "https://www.europeansleeper.eu",
+      "coordinates": [
+        {
+          "lat": 48.8566,
+          "lon": 2.3522
+        },
+        {
+          "lat": 50.8503,
+          "lon": 4.3517
+        },
+        {
+          "lat": 52.52,
+          "lon": 13.405
+        }
+      ],
+      "stops": [
+        {
+          "city": "Paris Nord",
+          "arrival": null,
+          "departure": "18:25"
+        },
+        {
+          "city": "Bruxelles Midi",
+          "arrival": "20:40",
+          "departure": "20:58"
+        },
+        {
+          "city": "Berlin Hbf",
+          "arrival": "08:20",
+          "departure": null
+        }
+      ],
+      "accommodations": [
+        {
+          "type": "seat",
+          "startingPrice": 39
+        },
+        {
+          "type": "couchette",
+          "startingPrice": 79
+        },
+        {
+          "type": "sleeper",
+          "startingPrice": 149
+        }
+      ]
+    },
+    {
+      "id": "pkp-carpatia",
+      "name": "Przemyśl → Munich",
+      "operator": "PKP Intercity",
+      "status": "active",
+      "operating_days": "Quotidien (dès déc. 2025)",
+      "duration": "16h00",
+      "is_direct": true,
+      "bike_allowed": true,
+      "pet_allowed": false,
+      "meal_included": true,
+      "shower_available": false,
+      "booking_url": "https://www.intercity.pl",
+      "coordinates": [
+        {
+          "lat": 49.7839,
+          "lon": 22.7677
+        },
+        {
+          "lat": 50.0647,
+          "lon": 19.945
+        },
+        {
+          "lat": 50.0755,
+          "lon": 14.4378
+        },
+        {
+          "lat": 48.1351,
+          "lon": 11.582
+        }
+      ],
+      "stops": [
+        {
+          "city": "Przemyśl",
+          "arrival": null,
+          "departure": "14:30"
+        },
+        {
+          "city": "Cracovie",
+          "arrival": "17:10",
+          "departure": "17:25"
+        },
+        {
+          "city": "Prague",
+          "arrival": "22:45",
+          "departure": "23:05"
+        },
+        {
+          "city": "Munich Hbf",
+          "arrival": "06:30",
+          "departure": null
+        }
+      ],
+      "accommodations": [
+        {
+          "type": "seat",
+          "startingPrice": 35
+        },
+        {
+          "type": "couchette",
+          "startingPrice": 65
+        },
+        {
+          "type": "sleeper",
+          "startingPrice": 119
+        }
+      ]
+    },
+    {
+      "id": "sbb-basel-copenhagen",
+      "name": "Basel → Copenhague",
+      "operator": "SBB",
+      "status": "upcoming",
+      "operating_days": "Prévu avril 2026",
+      "duration": "13h00",
+      "is_direct": true,
+      "bike_allowed": true,
+      "pet_allowed": false,
+      "meal_included": true,
+      "shower_available": true,
+      "booking_url": "https://www.sbb.ch",
+      "coordinates": [
+        {
+          "lat": 47.5596,
+          "lon": 7.5886
+        },
+        {
+          "lat": 53.5753,
+          "lon": 10.0153
+        },
+        {
+          "lat": 55.6761,
+          "lon": 12.5683
+        }
+      ],
+      "stops": [
+        {
+          "city": "Basel SBB",
+          "arrival": null,
+          "departure": "19:30"
+        },
+        {
+          "city": "Hamburg Hbf",
+          "arrival": "02:15",
+          "departure": "02:30"
+        },
+        {
+          "city": "Copenhague H",
+          "arrival": "08:30",
+          "departure": null
+        }
+      ],
+      "accommodations": [
+        {
+          "type": "couchette",
+          "startingPrice": 69
+        },
+        {
+          "type": "sleeper",
+          "startingPrice": 129
+        },
+        {
+          "type": "suite",
+          "startingPrice": 229
+        }
+      ]
     }
   ]
 }
