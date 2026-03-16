@@ -1,3 +1,4 @@
+from __future__ import annotations
 """
 build_routes.py
 Script principal de mise à jour de routes.json.

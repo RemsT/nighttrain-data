@@ -1,3 +1,4 @@
+from __future__ import annotations
 """
 fetch_hafas.py
 Récupère les arrêts et coordonnées d'un train de nuit via l'API Hafas.

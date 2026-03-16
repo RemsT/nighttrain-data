@@ -1,3 +1,4 @@
+from __future__ import annotations
 #!/usr/bin/env python3
 """
 NightTrain — Script de mise à jour automatique de routes.json

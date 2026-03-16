@@ -2,8 +2,8 @@ name: Update Night Train Routes
 
 on:
   schedule:
-    # Chaque lundi à 05:00 UTC (avant les heures de pointe Europe)
-    - cron: '0 5 * * 1'
+    # Le 1er de chaque mois à 05:00 UTC
+    - cron: '0 5 1 * *'
   workflow_dispatch:
     # Déclenchement manuel depuis GitHub Actions > Run workflow
     inputs:
@@ -39,7 +39,7 @@ jobs:
 
       # 3. Dépendances
       - name: Install dependencies
-        run: pip install requests pyyaml
+        run: pip install -r requirements.txt
 
       # 4. Sauvegarde avant modification (pour la validation)
       - name: Backup routes.json
@@ -65,7 +65,7 @@ jobs:
 
       # 7. Nettoyage du backup
       - name: Cleanup backup
-        run: rm routes_backup.json
+        run: rm -f routes_backup.json
         if: always()
 
       # 8. Commit si des changements ont eu lieu

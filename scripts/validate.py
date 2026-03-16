@@ -1,3 +1,4 @@
+from __future__ import annotations
 """
 validate.py
 Valide routes.json avant de committer. Fait échouer le job CI (exit 1) si:

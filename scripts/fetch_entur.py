@@ -1,3 +1,4 @@
+from __future__ import annotations
 """
 fetch_entur.py
 Récupère les arrêts des trains de nuit norvégiens via l'API Entur (GraphQL).

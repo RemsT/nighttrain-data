@@ -1,3 +1,4 @@
+from __future__ import annotations
 """
 fetch_sncf.py
 Récupère les arrêts des Intercités de Nuit SNCF via l'API SNCF Open Data.
