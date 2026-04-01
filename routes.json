@@ -1,6 +1,6 @@
 {
-  "version": 2,
-  "updated_at": "2026-03-16T20:12:10Z",
+  "version": 3,
+  "updated_at": "2026-04-01T06:45:04Z",
   "routes": [
     {
       "id": "nightjet-vienna-hamburg",
@@ -2870,7 +2870,7 @@
       "name": "Paris → Stations de ski alpines",
       "operator": "Travelski Night Express",
       "operator_url": "https://www.travelski.com",
-      "status": "active",
+      "status": "suspended",
       "operating_days": "Saisonnier hiver (19 déc 2025 - 20 mars 2026)",
       "duration": "~8h30",
       "is_direct": true,
@@ -5072,7 +5072,7 @@
       "name": "Malmö → Österreich (ski)",
       "operator": "Snälltåget",
       "operator_url": "https://www.snalltaget.se",
-      "status": "active",
+      "status": "suspended",
       "operating_days": "1–2x par semaine (saisonnier hiver)",
       "duration": "~20h",
       "is_direct": true,
