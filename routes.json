@@ -1,6 +1,6 @@
 {
-  "version": 3,
-  "updated_at": "2026-04-01T06:45:04Z",
+  "version": 4,
+  "updated_at": "2026-05-01T07:39:56Z",
   "routes": [
     {
       "id": "nightjet-vienna-hamburg",
@@ -4537,7 +4537,7 @@
       "name": "Roma → Bolzano",
       "operator": "Trenitalia",
       "operator_url": "https://www.trenitalia.com",
-      "status": "active",
+      "status": "suspended",
       "operating_days": "Vendredi–Samedi",
       "duration": "~7h05",
       "is_direct": true,
